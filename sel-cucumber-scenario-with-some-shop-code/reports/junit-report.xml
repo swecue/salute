@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-buy-beverage-s/he-should-be-asked-about-quantity" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:\Users\poury\Desktop\sel-cucumber-scenario-with-some-shop-code\features\buy-beverages.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we have a regiestered  user" classname="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-buy-beverage-s/he-should-be-asked-about-quantity" time="0.000753483">
+        </testcase>
+        <testcase name="When the user wants to add of a beverages" classname="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-buy-beverage-s/he-should-be-asked-about-quantity" time="0.000282698">
+        </testcase>
+        <testcase name="Then ask qunntity of beverages" classname="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-buy-beverage-s/he-should-be-asked-about-quantity" time="0.000804209">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-1000-beverages-it-should-not-be-possible" tests="3" failures="0" skipped="1">
+        <properties>
+            <property name="URI" value="C:\Users\poury\Desktop\sel-cucumber-scenario-with-some-shop-code\features\buy-beverages.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we have a regiestered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-1000-beverages-it-should-not-be-possible" time="0.000352233">
+        </testcase>
+        <testcase name="When the user wants to add 1000 beverages" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-1000-beverages-it-should-not-be-possible" time="0.000684517">
+        </testcase>
+        <testcase name="Then should not be possible" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-1000-beverages-it-should-not-be-possible">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable--quantity" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:\Users\poury\Desktop\sel-cucumber-scenario-with-some-shop-code\features\buy-beverages.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we have a regiestered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable--quantity" time="0.001216857">
+        </testcase>
+        <testcase name="When the user wants to add 240 beverages" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable--quantity" time="0.000204044">
+        </testcase>
+        <testcase name="Then shopping cart should be updated" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable--quantity" time="0.000756332">
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-0-beverages-it-should-not-be-possible" tests="3" failures="0" skipped="1">
+        <properties>
+            <property name="URI" value="C:\Users\poury\Desktop\sel-cucumber-scenario-with-some-shop-code\features\buy-beverages.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we have a regiestered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-0-beverages-it-should-not-be-possible" time="0.000110001">
+        </testcase>
+        <testcase name="When the user wants to add 0 beverages" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-0-beverages-it-should-not-be-possible" time="0.000095753">
+        </testcase>
+        <testcase name="Then should not be possible" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-0-beverages-it-should-not-be-possible">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="C:\Users\poury\Desktop\sel-cucumber-scenario-with-some-shop-code\features\buy-beverages.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we have a regiestered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.000267879">
+        </testcase>
+        <testcase name="When the user wants to add beverages with the quantity of type &quot;boolean true&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then should not be possible" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="C:\Users\poury\Desktop\sel-cucumber-scenario-with-some-shop-code\features\buy-beverages.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we have a regiestered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.000143059">
+        </testcase>
+        <testcase name="When the user wants to add beverages with the quantity of type &quot;boolean false&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then should not be possible" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="C:\Users\poury\Desktop\sel-cucumber-scenario-with-some-shop-code\features\buy-beverages.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we have a regiestered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.000293528">
+        </testcase>
+        <testcase name="When the user wants to add beverages with the quantity of type &quot;array&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then should not be possible" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="C:\Users\poury\Desktop\sel-cucumber-scenario-with-some-shop-code\features\buy-beverages.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we have a regiestered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.000120261">
+        </testcase>
+        <testcase name="When the user wants to add beverages with the quantity of type &quot;object&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then should not be possible" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="C:\Users\poury\Desktop\sel-cucumber-scenario-with-some-shop-code\features\buy-beverages.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we have a regiestered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.00013736">
+        </testcase>
+        <testcase name="When the user wants to add beverages with the quantity of type &quot;null&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then should not be possible" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="C:\Users\poury\Desktop\sel-cucumber-scenario-with-some-shop-code\features\buy-beverages.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we have a regiestered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.000350523">
+        </testcase>
+        <testcase name="When the user wants to add beverages with the quantity of type &quot;undefined&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then should not be possible" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
+        <properties>
+            <property name="URI" value="C:\Users\poury\Desktop\sel-cucumber-scenario-with-some-shop-code\features\buy-beverages.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we have a regiestered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.00012824">
+        </testcase>
+        <testcase name="When the user wants to add beverages with the quantity of type &quot;empty string&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then should not be possible" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+</testsuites>

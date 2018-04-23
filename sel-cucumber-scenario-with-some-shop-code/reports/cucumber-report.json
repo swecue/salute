@@ -1,0 +1,620 @@
+[
+  {
+    "description": "In order to buy beverages\nI want to be able to add a certain quantity of a beverage to my shopping cart\nThe maximum quantity in the cart is 1000 pcs",
+    "elements": [
+      {
+        "id": "as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-buy-beverage-s/he-should-be-asked-about-quantity",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "When  the user wants to buy beverage s/he should be asked about quantity",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we have a regiestered  user",
+            "result": {
+              "status": "passed",
+              "duration": 753483
+            },
+            "line": 7,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user wants to add of a beverages",
+            "result": {
+              "status": "passed",
+              "duration": 282698
+            },
+            "line": 8,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "ask qunntity of beverages",
+            "result": {
+              "status": "passed",
+              "duration": 804209
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:20"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 3531500353
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\node_modules\\selenium-cucumber-js\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-1000-beverages-it-should-not-be-possible",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "When the user wants to buy 1000 beverages it should not be possible",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we have a regiestered  user",
+            "result": {
+              "status": "passed",
+              "duration": 352233
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user wants to add 1000 beverages",
+            "result": {
+              "status": "passed",
+              "duration": 684517
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "should not be possible",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 2827500399
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\node_modules\\selenium-cucumber-js\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable--quantity",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "When the user wants to add acceptable  quantity",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we have a regiestered  user",
+            "result": {
+              "status": "passed",
+              "duration": 1216857
+            },
+            "line": 17,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user wants to add 240 beverages",
+            "result": {
+              "status": "passed",
+              "duration": 204044
+            },
+            "line": 18,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "shopping cart should be updated",
+            "result": {
+              "status": "passed",
+              "duration": 756332
+            },
+            "line": 19,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:29"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 2324487609
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\node_modules\\selenium-cucumber-js\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-0-beverages-it-should-not-be-possible",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "When the user wants to buy 0 beverages it should not be possible",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we have a regiestered  user",
+            "result": {
+              "status": "passed",
+              "duration": 110001
+            },
+            "line": 22,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user wants to add 0 beverages",
+            "result": {
+              "status": "passed",
+              "duration": 95753
+            },
+            "line": 23,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "should not be possible",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 2400681098
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\node_modules\\selenium-cucumber-js\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "When the user wants to buy beverages with a non-number",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we have a regiestered  user",
+            "result": {
+              "status": "passed",
+              "duration": 267879
+            },
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user wants to add beverages with the quantity of type \"boolean true\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "should not be possible",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 2862989877
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\node_modules\\selenium-cucumber-js\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "When the user wants to buy beverages with a non-number",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we have a regiestered  user",
+            "result": {
+              "status": "passed",
+              "duration": 143059
+            },
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user wants to add beverages with the quantity of type \"boolean false\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "should not be possible",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 2828628913
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\node_modules\\selenium-cucumber-js\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "When the user wants to buy beverages with a non-number",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we have a regiestered  user",
+            "result": {
+              "status": "passed",
+              "duration": 293528
+            },
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user wants to add beverages with the quantity of type \"array\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "should not be possible",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 2815945671
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\node_modules\\selenium-cucumber-js\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "When the user wants to buy beverages with a non-number",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we have a regiestered  user",
+            "result": {
+              "status": "passed",
+              "duration": 120261
+            },
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user wants to add beverages with the quantity of type \"object\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "should not be possible",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 2850937579
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\node_modules\\selenium-cucumber-js\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "When the user wants to buy beverages with a non-number",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we have a regiestered  user",
+            "result": {
+              "status": "passed",
+              "duration": 137360
+            },
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user wants to add beverages with the quantity of type \"null\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "should not be possible",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 2818857579
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\node_modules\\selenium-cucumber-js\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "When the user wants to buy beverages with a non-number",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we have a regiestered  user",
+            "result": {
+              "status": "passed",
+              "duration": 350523
+            },
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user wants to add beverages with the quantity of type \"undefined\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "should not be possible",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 2849723571
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\node_modules\\selenium-cucumber-js\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "When the user wants to buy beverages with a non-number",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we have a regiestered  user",
+            "result": {
+              "status": "passed",
+              "duration": 128240
+            },
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\step-definitions\\buy-beverages.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user wants to add beverages with the quantity of type \"empty string\"",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "should not be possible",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 2336221872
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\node_modules\\selenium-cucumber-js\\runtime\\world.js:221"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-of-systembolagets-online-shop",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "As a user of Systembolagets online shop",
+    "tags": [],
+    "uri": "C:\\Users\\poury\\Desktop\\sel-cucumber-scenario-with-some-shop-code\\features\\buy-beverages.feature"
+  }
+]

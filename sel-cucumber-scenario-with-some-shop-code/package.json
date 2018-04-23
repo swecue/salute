@@ -1,0 +1,15 @@
+{
+  "name": "sel-cucumber-template",
+  "version": "1.0.0",
+  "description": "A template for using cucumber and selenium",
+  "main": "app.js",
+  "scripts": {
+    "test": "node ./node_modules/selenium-cucumber-js/index.js -b phantomjs && exit 1",
+    "one-feature": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-cucumber-js": "^1.5.12"
+  }
+}
