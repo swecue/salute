@@ -1,4 +1,5 @@
-Feature: As a user of Systembolagets online shop
+Feature: Product search box
+As a user of Systembolagets online shop
 In order to find my desired product
 I want to be able to search for keywords to find it
 
