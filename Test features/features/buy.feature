@@ -17,14 +17,12 @@ Feature: Purchase a product
     When user press purchase
     Then confirm the user really wants to proceed.
 
-  Scenario: Insufficient funds
-    Given that the user has one or more items in his cart
-    And does not have sufficient funds on his payment method
-    And has proceeded to checkout
-    When the user confirms purchase
-    Then 'Error: Insufficient funds'
-
   Scenario: Purchase canceled
     Given that the user has proceeded to checkout
     When user does not confirm purchase
     Then cancel purchase
+
+  Scenario: Invalid Purchase
+    Given that the user does not have any items in the cart
+    When user tries to proceed to checkout
+    Then 'Unable to proceed, no items in cart'
