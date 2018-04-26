@@ -10,7 +10,7 @@ Feature: Sort all products by name
         When the user presses search
         Then the user should only be presented with products starting with the letter "a"
 
-        Scenario: Searching for a name/letter that does not exist
+    Scenario: Searching for a name/letter that does not exist
         Given that the user chooses to search for a non valid product name
         When the user presses search
         Then the user should be presented with a message telling the user "Sorry no product with that name"
