@@ -5,13 +5,13 @@
   "main": "app.js",
   "scripts": {
     "test": "node ./node_modules/selenium-cucumber-js/index.js -b phantomjs && exit 1",
-    "one-feature": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0"
-    "Anna": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0"
-    "Carl": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0"
-    "Poury": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0"
-    "Suma": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0"
-    "Johan": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0"
-    "Urban": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/overview-display-quantity.feature & exit 0"
+    "one-feature": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0",
+    "Anna": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0",
+    "Carl": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0",
+    "Poury": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0",
+    "Suma": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0",
+    "Johan": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0",
+    "Urban": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/overview-display-quantity.feature & exit 0",
     "Gabriell": "node node_modules/selenium-cucumber-js/index.js -b phantomjs -f ./features/buy-beverages.feature & exit 0"
   },
   "author": "",
