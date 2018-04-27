@@ -1,478 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="purchase-a-product;valid-purchase" tests="6" failures="0" skipped="6">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/buy.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the user has one or more items in his cart" classname="purchase-a-product;valid-purchase">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And has proceeded to checkout" classname="purchase-a-product;valid-purchase">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When user confirms purchase" classname="purchase-a-product;valid-purchase">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then remove items from cart" classname="purchase-a-product;valid-purchase">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And a popup should show thanking user for the purchase" classname="purchase-a-product;valid-purchase">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And adjust stock" classname="purchase-a-product;valid-purchase">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="purchase-a-product;confirm-purchase" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/buy.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the user has one or more items in his cart" classname="purchase-a-product;confirm-purchase">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And has the cart open" classname="purchase-a-product;confirm-purchase">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When user press purchase" classname="purchase-a-product;confirm-purchase">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then confirm the user really wants to proceed." classname="purchase-a-product;confirm-purchase">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="purchase-a-product;insufficient-funds" tests="5" failures="0" skipped="5">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/buy.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the user has one or more items in his cart" classname="purchase-a-product;insufficient-funds">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And does not have sufficient funds on his payment method" classname="purchase-a-product;insufficient-funds">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And has proceeded to checkout" classname="purchase-a-product;insufficient-funds">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When the user confirms purchase" classname="purchase-a-product;insufficient-funds">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then &apos;Error: Insufficient funds&apos;" classname="purchase-a-product;insufficient-funds">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="purchase-a-product;purchase-canceled" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/buy.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the user has proceeded to checkout" classname="purchase-a-product;purchase-canceled">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When user does not confirm purchase" classname="purchase-a-product;purchase-canceled">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then cancel purchase" classname="purchase-a-product;purchase-canceled">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="choose-search-categories;filter-products-by-category-and/or-country" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/categories.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I choose category &quot;vitt vin&quot; in the list" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And choose origin &quot;Spanien&quot;" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then I should get a list with the products that relate to the category and country I choosed" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="choose-search-categories;filter-products-by-category-and/or-country" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/categories.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I choose category &quot;rött vin&quot; in the list" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And choose origin &quot;Frankrike&quot;" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then I should get a list with the products that relate to the category and country I choosed" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="choose-search-categories;filter-products-by-category-and/or-country" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/categories.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I choose category &quot;alkoholfritt&quot; in the list" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And choose origin &quot;Sverige&quot;" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then I should get a list with the products that relate to the category and country I choosed" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="choose-search-categories;filter-products-by-category-and/or-country" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/categories.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I choose category &quot;öl&quot; in the list" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And choose origin &quot;undefined&quot;" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then I should get a list with the products that relate to the category and country I choosed" classname="choose-search-categories;filter-products-by-category-and/or-country">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="warn-about-underage;when-we-don&apos;t-know-that-age-of-a-user-ask-for-it" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/check-age.feature">
-            </property>
-        </properties>
-        <testcase name="Given that we don&apos;t know the age of user / not registrered" classname="warn-about-underage;when-we-don&apos;t-know-that-age-of-a-user-ask-for-it">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When the user tries to see our products" classname="warn-about-underage;when-we-don&apos;t-know-that-age-of-a-user-ask-for-it">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then ask the user for to register" classname="warn-about-underage;when-we-don&apos;t-know-that-age-of-a-user-ask-for-it">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="warn-about-underage;when-a-user-with-the-age-15-tries-to-see-our-products-then-a-warning-should--be-displayed" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/check-age.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am a registrered user with a known age of &quot;15&quot;" classname="warn-about-underage;when-a-user-with-the-age-15-tries-to-see-our-products-then-a-warning-should--be-displayed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I try to see products on the web site" classname="warn-about-underage;when-a-user-with-the-age-15-tries-to-see-our-products-then-a-warning-should--be-displayed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then a warning should &quot;&quot; be displayed" classname="warn-about-underage;when-a-user-with-the-age-15-tries-to-see-our-products-then-a-warning-should--be-displayed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="warn-about-underage;when-a-user-with-the-age-19-tries-to-see-our-products-then-a-warning-should--be-displayed" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/check-age.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am a registrered user with a known age of &quot;19&quot;" classname="warn-about-underage;when-a-user-with-the-age-19-tries-to-see-our-products-then-a-warning-should--be-displayed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I try to see products on the web site" classname="warn-about-underage;when-a-user-with-the-age-19-tries-to-see-our-products-then-a-warning-should--be-displayed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then a warning should &quot;&quot; be displayed" classname="warn-about-underage;when-a-user-with-the-age-19-tries-to-see-our-products-then-a-warning-should--be-displayed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="warn-about-underage;when-a-user-with-the-age-25-tries-to-see-our-products-then-a-warning-should-not-be-displayed" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/check-age.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am a registrered user with a known age of &quot;25&quot;" classname="warn-about-underage;when-a-user-with-the-age-25-tries-to-see-our-products-then-a-warning-should-not-be-displayed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I try to see products on the web site" classname="warn-about-underage;when-a-user-with-the-age-25-tries-to-see-our-products-then-a-warning-should-not-be-displayed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then a warning should &quot;not&quot; be displayed" classname="warn-about-underage;when-a-user-with-the-age-25-tries-to-see-our-products-then-a-warning-should-not-be-displayed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="warn-about-underage;when-a-user-with-the-age-40-tries-to-see-our-products-then-a-warning-should-not-be-displayed" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/check-age.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am a registrered user with a known age of &quot;40&quot;" classname="warn-about-underage;when-a-user-with-the-age-40-tries-to-see-our-products-then-a-warning-should-not-be-displayed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I try to see products on the web site" classname="warn-about-underage;when-a-user-with-the-age-40-tries-to-see-our-products-then-a-warning-should-not-be-displayed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then a warning should &quot;not&quot; be displayed" classname="warn-about-underage;when-a-user-with-the-age-40-tries-to-see-our-products-then-a-warning-should-not-be-displayed">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="create-persons;a-person-has-a-name-and-age" tests="6" failures="0" skipped="6">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/creating-persons.feature">
-            </property>
-        </properties>
-        <testcase name="Given that we have a name as a non-empty string" classname="create-persons;a-person-has-a-name-and-age">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And an age as a number" classname="create-persons;a-person-has-a-name-and-age">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When I try to create a person with this data" classname="create-persons;a-person-has-a-name-and-age">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then a new person should be created" classname="create-persons;a-person-has-a-name-and-age">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And have the properties name and age" classname="create-persons;a-person-has-a-name-and-age">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And the properties should be equal to our original data" classname="create-persons;a-person-has-a-name-and-age">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="create-persons;a-person-should-have-a-name-that-is-not-a-number" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/creating-persons.feature">
-            </property>
-        </properties>
-        <testcase name="Given that we have a name that is of the data type &quot;number&quot;" classname="create-persons;a-person-should-have-a-name-that-is-not-a-number">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When we try to create a person" classname="create-persons;a-person-should-have-a-name-that-is-not-a-number">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then we should get a runtime error" classname="create-persons;a-person-should-have-a-name-that-is-not-a-number">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="create-persons;a-person-should-have-a-name-that-is-not-a-boolean-true" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/creating-persons.feature">
-            </property>
-        </properties>
-        <testcase name="Given that we have a name that is of the data type &quot;boolean true&quot;" classname="create-persons;a-person-should-have-a-name-that-is-not-a-boolean-true">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When we try to create a person" classname="create-persons;a-person-should-have-a-name-that-is-not-a-boolean-true">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then we should get a runtime error" classname="create-persons;a-person-should-have-a-name-that-is-not-a-boolean-true">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="create-persons;a-person-should-have-a-name-that-is-not-a-boolean-false" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/creating-persons.feature">
-            </property>
-        </properties>
-        <testcase name="Given that we have a name that is of the data type &quot;boolean false&quot;" classname="create-persons;a-person-should-have-a-name-that-is-not-a-boolean-false">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When we try to create a person" classname="create-persons;a-person-should-have-a-name-that-is-not-a-boolean-false">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then we should get a runtime error" classname="create-persons;a-person-should-have-a-name-that-is-not-a-boolean-false">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="create-persons;a-person-should-have-a-name-that-is-not-a-array" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/creating-persons.feature">
-            </property>
-        </properties>
-        <testcase name="Given that we have a name that is of the data type &quot;array&quot;" classname="create-persons;a-person-should-have-a-name-that-is-not-a-array">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When we try to create a person" classname="create-persons;a-person-should-have-a-name-that-is-not-a-array">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then we should get a runtime error" classname="create-persons;a-person-should-have-a-name-that-is-not-a-array">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="create-persons;a-person-should-have-a-name-that-is-not-a-object" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/creating-persons.feature">
-            </property>
-        </properties>
-        <testcase name="Given that we have a name that is of the data type &quot;object&quot;" classname="create-persons;a-person-should-have-a-name-that-is-not-a-object">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When we try to create a person" classname="create-persons;a-person-should-have-a-name-that-is-not-a-object">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then we should get a runtime error" classname="create-persons;a-person-should-have-a-name-that-is-not-a-object">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="create-persons;a-person-should-have-a-name-that-is-not-a-null" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/creating-persons.feature">
-            </property>
-        </properties>
-        <testcase name="Given that we have a name that is of the data type &quot;null&quot;" classname="create-persons;a-person-should-have-a-name-that-is-not-a-null">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When we try to create a person" classname="create-persons;a-person-should-have-a-name-that-is-not-a-null">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then we should get a runtime error" classname="create-persons;a-person-should-have-a-name-that-is-not-a-null">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="create-persons;a-person-should-have-a-name-that-is-not-a-undefined" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/creating-persons.feature">
-            </property>
-        </properties>
-        <testcase name="Given that we have a name that is of the data type &quot;undefined&quot;" classname="create-persons;a-person-should-have-a-name-that-is-not-a-undefined">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When we try to create a person" classname="create-persons;a-person-should-have-a-name-that-is-not-a-undefined">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then we should get a runtime error" classname="create-persons;a-person-should-have-a-name-that-is-not-a-undefined">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="create-persons;a-person-should-have-a-name-that-is-not-a-empty-string" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/creating-persons.feature">
-            </property>
-        </properties>
-        <testcase name="Given that we have a name that is of the data type &quot;empty string&quot;" classname="create-persons;a-person-should-have-a-name-that-is-not-a-empty-string">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When we try to create a person" classname="create-persons;a-person-should-have-a-name-that-is-not-a-empty-string">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then we should get a runtime error" classname="create-persons;a-person-should-have-a-name-that-is-not-a-empty-string">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-see-what-is-in-the-shopping-cart-a-list-with-item-name-and-quantity-of-everything-in-the-shopping-cart-should-be-produced" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/overview-display-quantity.feature">
-            </property>
-        </properties>
-        <testcase name="Given that we have a user" classname="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-see-what-is-in-the-shopping-cart-a-list-with-item-name-and-quantity-of-everything-in-the-shopping-cart-should-be-produced">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When the user wants to see what is in the shopping cart" classname="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-see-what-is-in-the-shopping-cart-a-list-with-item-name-and-quantity-of-everything-in-the-shopping-cart-should-be-produced">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then a list of everything there should be produced" classname="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-see-what-is-in-the-shopping-cart-a-list-with-item-name-and-quantity-of-everything-in-the-shopping-cart-should-be-produced">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And if there is nothing there an empty list should be produced." classname="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-see-what-is-in-the-shopping-cart-a-list-with-item-name-and-quantity-of-everything-in-the-shopping-cart-should-be-produced">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
     <testsuite name="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-buy-beverage-s/he-should-be-asked-about-quantity" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/quantity-beverages.feature">
+            <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
         <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-buy-beverage-s/he-should-be-asked-about-quantity">
@@ -490,7 +20,7 @@
     </testsuite>
     <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-1000-beverages-it-should-not-be-possible" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/quantity-beverages.feature">
+            <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
         <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-1000-beverages-it-should-not-be-possible">
@@ -508,7 +38,7 @@
     </testsuite>
     <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable--quantity" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/quantity-beverages.feature">
+            <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
         <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable--quantity">
@@ -526,7 +56,7 @@
     </testsuite>
     <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-0-beverages-it-should-not-be-possible" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/quantity-beverages.feature">
+            <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
         <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-0-beverages-it-should-not-be-possible">
@@ -544,7 +74,7 @@
     </testsuite>
     <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/quantity-beverages.feature">
+            <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
         <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
@@ -562,7 +92,7 @@
     </testsuite>
     <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/quantity-beverages.feature">
+            <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
         <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
@@ -580,7 +110,7 @@
     </testsuite>
     <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/quantity-beverages.feature">
+            <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
         <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
@@ -598,7 +128,7 @@
     </testsuite>
     <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/quantity-beverages.feature">
+            <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
         <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
@@ -616,7 +146,7 @@
     </testsuite>
     <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/quantity-beverages.feature">
+            <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
         <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
@@ -634,7 +164,7 @@
     </testsuite>
     <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/quantity-beverages.feature">
+            <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
         <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
@@ -652,7 +182,7 @@
     </testsuite>
     <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
         <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/quantity-beverages.feature">
+            <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
         <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
@@ -664,246 +194,6 @@
             </skipped>
         </testcase>
         <testcase name="Then should not be possible" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="product-search-box;when-the-user-wants-to-find-a-product-by-its-name" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/search-box.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the user has clicked the search box" classname="product-search-box;when-the-user-wants-to-find-a-product-by-its-name">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When user enters name of the product" classname="product-search-box;when-the-user-wants-to-find-a-product-by-its-name">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And press search" classname="product-search-box;when-the-user-wants-to-find-a-product-by-its-name">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then show products with the name entered" classname="product-search-box;when-the-user-wants-to-find-a-product-by-its-name">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="product-search-box;when-the-user-wants-to-find-a-product-by-its-category" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/search-box.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the user has clicked the search Box" classname="product-search-box;when-the-user-wants-to-find-a-product-by-its-category">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When user enters name of the catergory" classname="product-search-box;when-the-user-wants-to-find-a-product-by-its-category">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And press search" classname="product-search-box;when-the-user-wants-to-find-a-product-by-its-category">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then show products with the category entered" classname="product-search-box;when-the-user-wants-to-find-a-product-by-its-category">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="product-search-box;when-the-user-wants-to-find-a-product-by-its-id" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/search-box.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the user has clicked the search box" classname="product-search-box;when-the-user-wants-to-find-a-product-by-its-id">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And knows the ID of the product s/he want" classname="product-search-box;when-the-user-wants-to-find-a-product-by-its-id">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And press search" classname="product-search-box;when-the-user-wants-to-find-a-product-by-its-id">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then show product with the ID entered" classname="product-search-box;when-the-user-wants-to-find-a-product-by-its-id">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="shopping-cart-item-quantity-display;no-items-in-cart" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/shopping-cart-navbar-quantity.feature">
-            </property>
-        </properties>
-        <testcase name="Given the user has the website open" classname="shopping-cart-item-quantity-display;no-items-in-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And has no items in his cart" classname="shopping-cart-item-quantity-display;no-items-in-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When don&apos;t add any items" classname="shopping-cart-item-quantity-display;no-items-in-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then show number 0 by the cart logo." classname="shopping-cart-item-quantity-display;no-items-in-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="shopping-cart-item-quantity-display;adding-item-to-cart" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/shopping-cart-navbar-quantity.feature">
-            </property>
-        </properties>
-        <testcase name="Given the user has the website open" classname="shopping-cart-item-quantity-display;adding-item-to-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And has no items in cart" classname="shopping-cart-item-quantity-display;adding-item-to-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When user adds an item to cart" classname="shopping-cart-item-quantity-display;adding-item-to-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then number by the cart logo shows 1" classname="shopping-cart-item-quantity-display;adding-item-to-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="shopping-cart-item-quantity-display;removing-item-from-cart" tests="4" failures="0" skipped="4">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/shopping-cart-navbar-quantity.feature">
-            </property>
-        </properties>
-        <testcase name="Given the user has the website open" classname="shopping-cart-item-quantity-display;removing-item-from-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And has an item in cart" classname="shopping-cart-item-quantity-display;removing-item-from-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When user removes item from cart" classname="shopping-cart-item-quantity-display;removing-item-from-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then number by the cart logo decrease by 1" classname="shopping-cart-item-quantity-display;removing-item-from-cart">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop-i-want-my-own-shopping-cart;each-user-should-have-their-own-&quot;my-cart&quot;" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/shopping-cart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that a user does not have a &quot;my cart&quot; from before" classname="as-a-user-of-systembolagets-online-shop-i-want-my-own-shopping-cart;each-user-should-have-their-own-&quot;my-cart&quot;">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When the user enters the page for the first time" classname="as-a-user-of-systembolagets-online-shop-i-want-my-own-shopping-cart;each-user-should-have-their-own-&quot;my-cart&quot;">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then a &quot;my cart&quot; will be added to the user" classname="as-a-user-of-systembolagets-online-shop-i-want-my-own-shopping-cart;each-user-should-have-their-own-&quot;my-cart&quot;">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop-i-want-my-own-shopping-cart;when-the-user-clicks-add-to-&quot;my-cart&quot;" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/shopping-cart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the user has chosen a product and quantity" classname="as-a-user-of-systembolagets-online-shop-i-want-my-own-shopping-cart;when-the-user-clicks-add-to-&quot;my-cart&quot;">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When user clicks add to cart" classname="as-a-user-of-systembolagets-online-shop-i-want-my-own-shopping-cart;when-the-user-clicks-add-to-&quot;my-cart&quot;">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then the correct product and quantity should be added to &quot;my cart&quot;" classname="as-a-user-of-systembolagets-online-shop-i-want-my-own-shopping-cart;when-the-user-clicks-add-to-&quot;my-cart&quot;">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop-i-want-my-own-shopping-cart;when-the-user-refreshes-the-page-&quot;my-cart&quot;-should-not-change" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/shopping-cart.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the user has added items to &quot;my cart&quot;" classname="as-a-user-of-systembolagets-online-shop-i-want-my-own-shopping-cart;when-the-user-refreshes-the-page-&quot;my-cart&quot;-should-not-change">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When the user refreshes the page" classname="as-a-user-of-systembolagets-online-shop-i-want-my-own-shopping-cart;when-the-user-refreshes-the-page-&quot;my-cart&quot;-should-not-change">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then the content of &quot;my cart&quot; should remain the same." classname="as-a-user-of-systembolagets-online-shop-i-want-my-own-shopping-cart;when-the-user-refreshes-the-page-&quot;my-cart&quot;-should-not-change">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="sort-all-products-by-name;searching-by-name" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/sort-by-name.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the user chooses &quot;red wine&quot;" classname="sort-all-products-by-name;searching-by-name">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When the user presses search" classname="sort-all-products-by-name;searching-by-name">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then only products with the name &quot;red wine&quot; should be shown" classname="sort-all-products-by-name;searching-by-name">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="sort-all-products-by-name;searching-by-alphabetical-order" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/sort-by-name.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the user chooses to search by the letter &quot;a&quot;" classname="sort-all-products-by-name;searching-by-alphabetical-order">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When the user presses search" classname="sort-all-products-by-name;searching-by-alphabetical-order">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then the user should only be presented with products starting with the letter &quot;a&quot;" classname="sort-all-products-by-name;searching-by-alphabetical-order">
-            <skipped message="">
-            </skipped>
-        </testcase>
-    </testsuite>
-    <testsuite name="sort-all-products-by-name;searching-for-a-name/letter-that-does-not-exist" tests="3" failures="0" skipped="3">
-        <properties>
-            <property name="URI" value="/Users/cm/Desktop/grupparbete/systembolaget_grp2/features/sort-by-name.feature">
-            </property>
-        </properties>
-        <testcase name="Given that the user chooses to search for a non valid product name" classname="sort-all-products-by-name;searching-for-a-name/letter-that-does-not-exist">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="When the user presses search" classname="sort-all-products-by-name;searching-for-a-name/letter-that-does-not-exist">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then the user should be presented with a message telling the user &quot;Sorry no product with that name&quot;" classname="sort-all-products-by-name;searching-for-a-name/letter-that-does-not-exist">
             <skipped message="">
             </skipped>
         </testcase>
