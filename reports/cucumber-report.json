@@ -1,6 +1,6 @@
 [
   {
-    "description": "In order to buy beverages\nI want to be able to add a certain quantity of a beverage to my shopping cart\nThe maximum quantity in the cart is 1000 pcs",
+    "description": "In order to buy beverages\nI want to be able to add a certain quantity of a beverage to my shopping cart\nThe maximum quantity in the cart is 999 pcs",
     "elements": [
       {
         "id": "as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-buy-beverage-s/he-should-be-asked-about-quantity",
@@ -11,23 +11,24 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that we have a registered  user",
+            "name": "that we have a user wants to add quantity to shopping cart",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 1168984
             },
-            "line": 7
+            "line": 7,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:9"
+            }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "name": "the user wants to add of a beverages",
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
-            "line": 8,
-            "match": {
-              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:15"
-            }
+            "line": 8
           },
           {
             "arguments": [],
@@ -43,7 +44,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 5430984955
+              "duration": 2599022180
             },
             "hidden": true,
             "match": {
@@ -63,23 +64,24 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that we have a registered  user",
+            "name": "that we have a user wants to add quantity to shopping cart",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 135080
             },
-            "line": 12
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:9"
+            }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "the user wants to add 1000 beverages",
+            "name": "the user wants to add 1000 pcs beverages to shopping cart",
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
-            "line": 13,
-            "match": {
-              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:25"
-            }
+            "line": 13
           },
           {
             "arguments": [],
@@ -95,7 +97,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2799732234
+              "duration": 2203841971
             },
             "hidden": true,
             "match": {
@@ -107,50 +109,48 @@
         "type": "scenario"
       },
       {
-        "id": "as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable--quantity",
+        "id": "as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable-quantity",
         "keyword": "Scenario",
         "line": 16,
-        "name": "When the user wants to add acceptable  quantity",
+        "name": "When the user wants to add acceptable quantity",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that we have a registered  user",
+            "name": "that we have a user wants to add quantity to shopping cart",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 164147
             },
-            "line": 17
+            "line": 17,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:9"
+            }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "the user wants to add 240 beverages",
+            "name": "the user wants to add 240 pcs of beverages",
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
-            "line": 18,
-            "match": {
-              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:25"
-            }
+            "line": 18
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "name": "shopping cart should be updated",
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
-            "line": 19,
-            "match": {
-              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:29"
-            }
+            "line": 19
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2801851337
+              "duration": 2235675252
             },
             "hidden": true,
             "match": {
@@ -170,23 +170,24 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that we have a registered  user",
+            "name": "that we have a user wants to add quantity to shopping cart",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 156168
             },
-            "line": 22
+            "line": 22,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:9"
+            }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "name": "the user wants to add 0 beverages",
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             },
-            "line": 23,
-            "match": {
-              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:25"
-            }
+            "line": 23
           },
           {
             "arguments": [],
@@ -202,7 +203,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3367522439
+              "duration": 2269635044
             },
             "hidden": true,
             "match": {
@@ -222,11 +223,15 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that we have a registered  user",
+            "name": "that we have a user wants to add quantity to shopping cart",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 185806
             },
-            "line": 29
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:9"
+            }
           },
           {
             "arguments": [],
@@ -251,7 +256,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3282358782
+              "duration": 2222090309
             },
             "hidden": true,
             "match": {
@@ -271,11 +276,15 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that we have a registered  user",
+            "name": "that we have a user wants to add quantity to shopping cart",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 173837
             },
-            "line": 29
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:9"
+            }
           },
           {
             "arguments": [],
@@ -300,7 +309,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2801163968
+              "duration": 2251516658
             },
             "hidden": true,
             "match": {
@@ -320,11 +329,15 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that we have a registered  user",
+            "name": "that we have a user wants to add quantity to shopping cart",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 140209
             },
-            "line": 29
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:9"
+            }
           },
           {
             "arguments": [],
@@ -349,7 +362,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2834909456
+              "duration": 2410473316
             },
             "hidden": true,
             "match": {
@@ -369,11 +382,15 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that we have a registered  user",
+            "name": "that we have a user wants to add quantity to shopping cart",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 89484
             },
-            "line": 29
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:9"
+            }
           },
           {
             "arguments": [],
@@ -398,7 +415,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2843840124
+              "duration": 2261075989
             },
             "hidden": true,
             "match": {
@@ -418,11 +435,15 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that we have a registered  user",
+            "name": "that we have a user wants to add quantity to shopping cart",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 140210
             },
-            "line": 29
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:9"
+            }
           },
           {
             "arguments": [],
@@ -447,7 +468,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 3379887103
+              "duration": 2231364662
             },
             "hidden": true,
             "match": {
@@ -467,11 +488,15 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that we have a registered  user",
+            "name": "that we have a user wants to add quantity to shopping cart",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 183526
             },
-            "line": 29
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:9"
+            }
           },
           {
             "arguments": [],
@@ -496,7 +521,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2826410816
+              "duration": 2208900917
             },
             "hidden": true,
             "match": {
@@ -516,11 +541,15 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that we have a registered  user",
+            "name": "that we have a user wants to add quantity to shopping cart",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 158448
             },
-            "line": 29
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\poury\\Desktop\\system\\systembolaget_grp2\\step-definitions\\quantity-beverages.js:9"
+            }
           },
           {
             "arguments": [],
@@ -545,7 +574,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2792038374
+              "duration": 2319264116
             },
             "hidden": true,
             "match": {

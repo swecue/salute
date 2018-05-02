@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-buy-beverage-s/he-should-be-asked-about-quantity" tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-buy-beverage-s/he-should-be-asked-about-quantity" tests="3" failures="0" skipped="2">
         <properties>
             <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
-        <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-buy-beverage-s/he-should-be-asked-about-quantity">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that we have a user wants to add quantity to shopping cart" classname="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-buy-beverage-s/he-should-be-asked-about-quantity" time="0.001168984">
         </testcase>
         <testcase name="When the user wants to add of a beverages" classname="as-a-user-of-systembolagets-online-shop;when--the-user-wants-to-buy-beverage-s/he-should-be-asked-about-quantity">
             <skipped message="">
@@ -18,16 +16,14 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-1000-beverages-it-should-not-be-possible" tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-1000-beverages-it-should-not-be-possible" tests="3" failures="0" skipped="2">
         <properties>
             <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
-        <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-1000-beverages-it-should-not-be-possible">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that we have a user wants to add quantity to shopping cart" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-1000-beverages-it-should-not-be-possible" time="0.00013508">
         </testcase>
-        <testcase name="When the user wants to add 1000 beverages" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-1000-beverages-it-should-not-be-possible">
+        <testcase name="When the user wants to add 1000 pcs beverages to shopping cart" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-1000-beverages-it-should-not-be-possible">
             <skipped message="">
             </skipped>
         </testcase>
@@ -36,32 +32,28 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable--quantity" tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable-quantity" tests="3" failures="0" skipped="2">
         <properties>
             <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
-        <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable--quantity">
+        <testcase name="Given that we have a user wants to add quantity to shopping cart" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable-quantity" time="0.000164147">
+        </testcase>
+        <testcase name="When the user wants to add 240 pcs of beverages" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable-quantity">
             <skipped message="">
             </skipped>
         </testcase>
-        <testcase name="When the user wants to add 240 beverages" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable--quantity">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then shopping cart should be updated" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable--quantity">
+        <testcase name="Then shopping cart should be updated" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-add-acceptable-quantity">
             <skipped message="">
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-0-beverages-it-should-not-be-possible" tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-0-beverages-it-should-not-be-possible" tests="3" failures="0" skipped="2">
         <properties>
             <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
-        <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-0-beverages-it-should-not-be-possible">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that we have a user wants to add quantity to shopping cart" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-0-beverages-it-should-not-be-possible" time="0.000156168">
         </testcase>
         <testcase name="When the user wants to add 0 beverages" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-0-beverages-it-should-not-be-possible">
             <skipped message="">
@@ -72,14 +64,12 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
         <properties>
             <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
-        <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that we have a user wants to add quantity to shopping cart" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.000185806">
         </testcase>
         <testcase name="When the user wants to add beverages with the quantity of type &quot;boolean true&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
             <skipped message="">
@@ -90,14 +80,12 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
         <properties>
             <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
-        <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that we have a user wants to add quantity to shopping cart" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.000173837">
         </testcase>
         <testcase name="When the user wants to add beverages with the quantity of type &quot;boolean false&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
             <skipped message="">
@@ -108,14 +96,12 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
         <properties>
             <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
-        <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that we have a user wants to add quantity to shopping cart" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.000140209">
         </testcase>
         <testcase name="When the user wants to add beverages with the quantity of type &quot;array&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
             <skipped message="">
@@ -126,14 +112,12 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
         <properties>
             <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
-        <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that we have a user wants to add quantity to shopping cart" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.000089484">
         </testcase>
         <testcase name="When the user wants to add beverages with the quantity of type &quot;object&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
             <skipped message="">
@@ -144,14 +128,12 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
         <properties>
             <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
-        <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that we have a user wants to add quantity to shopping cart" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.00014021">
         </testcase>
         <testcase name="When the user wants to add beverages with the quantity of type &quot;null&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
             <skipped message="">
@@ -162,14 +144,12 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
         <properties>
             <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
-        <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that we have a user wants to add quantity to shopping cart" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.000183526">
         </testcase>
         <testcase name="When the user wants to add beverages with the quantity of type &quot;undefined&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
             <skipped message="">
@@ -180,14 +160,12 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="3">
+    <testsuite name="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" tests="3" failures="0" skipped="2">
         <properties>
             <property name="URI" value="C:\Users\poury\Desktop\system\systembolaget_grp2\features\quantity-beverages.feature">
             </property>
         </properties>
-        <testcase name="Given that we have a registered  user" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that we have a user wants to add quantity to shopping cart" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number" time="0.000158448">
         </testcase>
         <testcase name="When the user wants to add beverages with the quantity of type &quot;empty string&quot;" classname="as-a-user-of-systembolagets-online-shop;when-the-user-wants-to-buy-beverages-with-a-non-number">
             <skipped message="">
