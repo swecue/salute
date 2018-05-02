@@ -1,0 +1,39 @@
+
+Dessa klasser och metoder skall vi använda:
+
+-Person
+ -constructor (name, birth date)
+
+-ShoppingCart
+ -constructor ()
+ -add (product, quantity)
+ -findProductInCart(product)
+ -changeQuantity(product, newQuantity)
+ -remove(product)
+ -removeAllItems()
+ -sum()
+
+
+-Category
+ -constructor(name, allProducts)
+
+-App
+
+-Product 
+ -constructor (data)
+
+-Search
+ -constructor(userInput)
+ -searchFilter
+ -searchResult
+ -showResult
+
+-Payment
+ -constructor ()
+ -confirmPayment(confirmed)
+ -confirmationMessage()
+
+-Storage
+ -constructor (user)
+ -storageLoad ()
+ -storageSave()
