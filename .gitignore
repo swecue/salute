@@ -61,3 +61,5 @@ typings/
 \.DS_Store
 
 reports/
+
+features/quantity-beverages\.feature
