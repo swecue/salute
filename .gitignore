@@ -60,8 +60,4 @@ typings/
 
 \.DS_Store
 
-reports/cucumber-report\.html
-
-reports/cucumber-report\.json
-
-reports/junit-report\.xml
+reports/
