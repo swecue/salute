@@ -57,7 +57,7 @@ module.exports = class ShoppingCart {
       "Can't remove a product not in the cart"
     );
 
-    // remove the item completelty from the cart
+    // remove the item completely from the cart
     this.thingsToBuy.splice(index, 1);
 
   }
