@@ -3,23 +3,95 @@ let ShoppingCart = require('../shopping-cart.js');
 
 module.exports = function(){
 
-	let cart = new ShoppingCart();
-	let quantity;
-	let product;
+   
+     let cart;
+     let Product;
+     let quantity;
+     let previousQuantity;
+     let quantityToAdd;
 
          this.Given(/^that the quantity\-input box is displayed and filled in with a valid number$/, function (callback) {
-        quantity=22
+         quantity=22;
          callback();
        });
-           this.When(/^the user clicks the Add\-button in the quantity\-dialogue$/, function (callback) {
-         // Write code here that turns the phrase above into concrete actions
+          this.When(/^the user clicks the Add\-button in the quantity\-dialogue$/, function (callback) {
+         product=myApp.products[0],22;
          callback();
        });
-
-         this.Then(/^the product of will be added to the cart with the quantity entered$/, function (callback) {
         
-        cart.add(product, quantity)
-        callback();
-    });
+         this.Then(/^the product will be added to the cart with the correct quantity$/, function (callback) {
+         cart.add(myApp[0],22)
+         callback();
+       });
+          this.Then(/^the quantity should be equal to our original data$/, function (callback) {
+         assert(
+        quantity ===22,
+      
+       );
+         callback();
+       });
+       
+       this.Given(/^that user has a shopping cart$/, function (callback) {
+         cart = new ShoppingCart();
+         callback();
+       });
+         this.When(/^the user add a valid product$/, function (callback) {
+         product=myApp.products[5];
+         callback();
+       });
+          this.Then(/^the shopping cart should be update with right product$/, function (callback) {
+          cart.add(myApp[5]);
+          callback();
+       });
+          
+          this.Then(/^the product should be equal to our original data$/, function (callback) {
+         
+         callback();
+       });
 
+          this.Given(/^that the cart already contains a product$/, function (callback) {
+         cart.add(myApp.products[10], 5);
+         callback();
+       });
+
+       this.When(/^the user add more than one of the same product in the cart$/, function (callback) {
+         cart.add(myApp.products[10],2);
+         callback();
+       });
+       
+       this.Then(/^the new quantity of product should be add to the cart$/, function (callback) {
+         cart.add(myApp.products[10],7)
+         callback();
+       });
+       this.Given(/^that the shopping cart has already (\d+) products$/, function (arg1, callback) {
+         quantity=999
+         
+         callback();
+       });
+        this.When(/^the user add (\d+) pcs beverages to shopping cart$/, function (arg1, callback) {
+         quantity=1000
+         callback();
+       });
+         this.Then(/^should show an error$/, function (callback) {
+
+        assert("The quantity of the product is invalid.");
+    callback();
+       });
+       //
+       
+         let currentDataType;
+         let validQuantity= 999;
+         let error;
+         let exampleData = {
+         
+         "boolean true": true,
+         "boolean false": false,
+         "array": [],
+         "object": {},
+         "null": null,
+         "undefined": undefined,
+         "empty string": ""
+  };     
+       
       }
+      
