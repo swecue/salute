@@ -11,22 +11,33 @@ module.exports = function(){
      let quantityToAdd;
      let error;
 
+
+
+     function productCheck(product) {
+    
+    for (let i = 0; myApp.products[0].shoppingCart.thingsToBuy.length > 0; i++) {
+     
+       assert.notStrictEqual(-1, myApp.products[0].shoppingCart.findProductInCart(product),
+      ['The product was not found']);
+    }
+  }
+
          this.Given(/^that the quantity\-input box is displayed and filled in with a valid number$/, function (callback) {
          quantity=22;
          callback();
        });
           this.When(/^the user clicks the Add\-button in the quantity\-dialogue$/, function (callback) {
-         product=myApp.products[0],22;
+         Product=myApp.products[0];
          callback();
        });
         
          this.Then(/^the product will be added to the cart with the correct quantity$/, function (callback) {
-         cart.add(myApp[0],22)
+          let theItemInTheCart= cart.add(myApp.products[0],22);
          callback();
        });
           this.Then(/^the quantity should be equal to our original data$/, function (callback) {
          assert(
-        quantity ===22,
+        quantity ===22
       
        );
          callback();
@@ -37,11 +48,11 @@ module.exports = function(){
          callback();
        });
          this.When(/^the user add a valid product$/, function (callback) {
-         product=myApp.products[5];
+         Product=myApp.products[5];
          callback();
        });
           this.Then(/^the shopping cart should be update with right product$/, function (callback) {
-          cart.add(myApp[5]);
+          cart.add(myApp.products[5]);
           callback();
        });
           
@@ -81,8 +92,6 @@ module.exports = function(){
        //
        
          let currentDataType;
-         let validQuantity= 999;
-         let error;
          let exampleData = {
          
          "boolean true": true,
