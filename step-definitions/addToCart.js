@@ -9,6 +9,7 @@ module.exports = function(){
      let quantity;
      let previousQuantity;
      let quantityToAdd;
+     let error;
 
          this.Given(/^that the quantity\-input box is displayed and filled in with a valid number$/, function (callback) {
          quantity=22;
