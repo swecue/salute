@@ -1,51 +1,117 @@
-let SearchBox = require('../search-box-class.js');
-let Person = require('../person.js'); 
+let SearchBox = require("../search-box-class.js");
+let app = require("../app.js");
 
-module.exports = function(){
+module.exports = function() {
+  let searchResult;
+  let userInput;
 
-let searchResult;
-let userInput;
+  this.Given(
+    /^that the user has entered a searchstring of at least three letters$/,
+    function(userInput, callback) {
+      userInput = "vin";
 
+      callback();
+    }
+  );
 
-this.Given(/^that the user has entered a searchstring of at least three letters$/, function (arg1, callback) {
-         
-         userInput = "vin";
+  this.When(/^the search executes$/, function(userInput, callback) {
+    let box = new SearchBox();
 
-         callback();
-       });
+    searchResult = box.search(userInput);
+    callback();
+  });
 
+  this.Then(/^products matching the searchstring are displayed$/, function(
+    callback
+  ) {
+    let myApp = new app();
+    product.searchResult;
 
-this.When(/^the search executes$/, function (callback) {
+    products = [];
 
-         let box = new SearchBox();
-        
-        searchResult = box.search(userInput);
-         callback();
-       });
+    callback();
+  });
 
-this.Then(/^products matching the searchstring are displayed$/, function (callback) {
-         
-         for (let i = 0; i < searchResult.length; i++) {
-         	if(str.search(SearchResult.length))
-         }
+  this.Given(/^that the user is searching for product by country$/, function(
+    userInput
+  ) {
+    userInput = "italien";
 
-         callback();
-       });
+    callback();
+  });
 
-this.When(/^user enters country to search for the product$/, function (callback) {
-         // Write code here that turns the phrase above into concrete actions
-         callback();
-       });
+  this.When(/^a country is entered to search for the product$/, function(
+    callback
+  ) {
+    // search for country in json file
+    let box = new SearchBox();
 
-this.Then(/^list of products with the country entered is displayed$/, function (callback) {
-         // Write code here that turns the phrase above into concrete actions
-         callback();
-       });
+    searchResult = box.search(userInput);
+    callback();
+  });
 
-this.When(/^user enters the ID of the product s\/he want$/, function (callback) {
-         // Write code here that turns the phrase above into concrete actions
-         callback();
-       });
+  this.Then(
+    /^a list of products with the country entered is displayed$/,
+    function(callback) {
+      // list
 
+      products = [];
 
-}
+      callback();
+    }
+  );
+
+  this.Given(/^that the user is searching for product by ID number$/, function(
+    userInput
+  ) {
+    userInput = 75997;
+
+    callback();
+  });
+
+  this.When(/^user enters the ID of the product s\/he want$/, function(
+    callback
+  ) {
+    let box = new SearchBox();
+
+    searchResult = box.search(userInput);
+    callback();
+  });
+
+  this.Then(/^only the products with the ID entered is displayed$/, function(
+    callback
+  ) {
+    products = [];
+
+    callback();
+  });
+
+  this.Given(
+    /^that the user is searching for product by it's first letter$/,
+    function(userInputs) {
+      userInput = "a";
+
+      callback();
+    }
+  );
+
+  this.When(
+    /^user enters the first letter of the product s\/he want$/,
+    function(callback) {
+      let box = new SearchBox();
+
+      searchResult = box.search(userInput);
+
+      callback();
+    }
+  );
+
+  this.Then(
+    /^a list of products with the first letter of the letter entered is displayed$/,
+    function(callback) {
+      products = [];
+
+      callback();
+    }
+  );
+};
