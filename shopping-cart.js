@@ -15,24 +15,26 @@ module.exports = class ShoppingCart {
 
     // should we allow a product that's already in the cart
     // to be added? or error? or add an extra quantity?
-   assert(product instanceof Product, "Trying to add a non-product to the cart");
-   assert(typeof quantity == 'number', "Trying to add a product with a non-numeric quantity");
-   assert(quantity > 0, "Trying to add a product of < 1 quantity");
 
-    let alreadyExistingItem = this.items.find(function(item){
-      return thingsToBuy.product.artikelid == product.artikelid;
-    });
 
-    if (alreadyExistingItem){
-      alreadyExistingItem.quantity += quantity;
-    } else {
+
+
+   for(let i = 0; i < this.thingsToBuy.length; i++){
+      if(this.thingsToBuy[i].product === product){
+        return i;
+      }
+    }
+    return -1;
+    assert(product instanceof Product, "Trying to add a non-product to the cart");
+    assert(typeof quantity == 'number', "Trying to add a product with a non-numeric quantity");
+    assert(quantity > 0, "Trying to add a product of < 1 quantity");
 
     this.thingsToBuy.push({
       product: product,
       quantity: quantity
     });
   }
-}
+
 
   findProductInCart(product){
     // should we check that product is an instance of Product?

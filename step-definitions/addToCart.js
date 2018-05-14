@@ -5,20 +5,18 @@ module.exports = function(){
 
    
      let cart;
-     let Product;
+     let product;
      let quantity;
-     let previousQuantity;
-     let quantityToAdd;
-     let error;
+    
 
 
 
-     function productCheck(product) {
+     function Checkproduct(product) {
     
     for (let i = 0; myApp.products[0].shoppingCart.thingsToBuy.length > 0; i++) {
      
        assert.notStrictEqual(-1, myApp.products[0].shoppingCart.findProductInCart(product),
-      ['The product was not found']);
+      ['The product was not added to the cart']);
     }
   }
 
@@ -27,12 +25,12 @@ module.exports = function(){
          callback();
        });
           this.When(/^the user clicks the Add\-button in the quantity\-dialogue$/, function (callback) {
-         Product=myApp.products[0];
+         product=myApp.products[0],22;
          callback();
        });
         
          this.Then(/^the product will be added to the cart with the correct quantity$/, function (callback) {
-          let theItemInTheCart= cart.add(myApp.products[0],22);
+         cart.add(myApp.products[0],22);
          callback();
        });
           this.Then(/^the quantity should be equal to our original data$/, function (callback) {
@@ -48,7 +46,7 @@ module.exports = function(){
          callback();
        });
          this.When(/^the user add a valid product$/, function (callback) {
-         Product=myApp.products[5];
+        product=myApp.products[5];
          callback();
        });
           this.Then(/^the shopping cart should be update with right product$/, function (callback) {
@@ -87,12 +85,13 @@ module.exports = function(){
          this.Then(/^should show an error$/, function (callback) {
 
         assert("The quantity of the product is invalid.");
-    callback();
+      callback();
        });
-       //
-       
-         let currentDataType;
-         let exampleData = {
+       // Test for a number of scenarios with non-valid data for quantity
+        let quantityToTryWith;
+        let currentDataType;
+        let error;
+        let exampleData = {
          
          "boolean true": true,
          "boolean false": false,
@@ -101,7 +100,37 @@ module.exports = function(){
          "null": null,
          "undefined": undefined,
          "empty string": ""
-  };     
-       
+     };     
+     this.Given(/^that user filled quantity\-input box with a "([^"]*)"$/, function (dataType, callback) {
+        currentDataType = dataType;
+        error = undefined;
+        quantityToTryWith = exampleData[dataType];
+
+         callback();
+       });
+
+    this.When(/^try to add to shopping cart$/, function (callback) {
+         try {
+      new ShoppingCart(product, quantityToTryWith);
+     }
+       catch(er){
+      error = er;
       }
+      callback();
+  });
+         this.Then(/^we should have an error$/, function (callback) {
+         assert(
+      error !== undefined,
+      " get an error when trying to add quantity to a shoppingCart with a " + currentDataType + " as quantity."
+    );
+         callback();
+       });
+
+
+
+
+
+         }
+                    
+     
       

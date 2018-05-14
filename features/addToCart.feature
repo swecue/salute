@@ -31,10 +31,10 @@ The maximum quantity in the cart is 999 pcs
  	   Then should show an error 
 
     
-    Scenario Outline: When the user add quantity beverages with a non-number
-	    Given that user has a shopping cart 
-	    When the user add beverages with the quantity of type "<non-valid-data-type>" 
-	    Then should not be possible 
+    Scenario Outline:  quantity of beverages should not be in <non-valid-data-type>
+	    Given that user filled quantity-input box with a "<non-valid-data-type>" 
+	    When  try to add to shopping cart
+	    Then we should have an error 
 
 	    Examples:
 	    | non-valid-data-type |
