@@ -1,31 +1,28 @@
 let myApp = require('../app.js');
 let ShoppingCart = require('../shopping-cart.js');
+let assert = require('assert');
 
 module.exports = function(){
 
    
-     let cart;
-     let product;
-     let quantity;
+    let cart;
+    let product;
+    let quantity;
+    let previousQuantity;
+    let quantityToAdd;
+    let totalQuantity;
     
+  
 
 
-
-     function Checkproduct(product) {
-    
-    for (let i = 0; myApp.products[0].shoppingCart.thingsToBuy.length > 0; i++) {
-     
-       assert.notStrictEqual(-1, myApp.products[0].shoppingCart.findProductInCart(product),
-      ['The product was not added to the cart']);
-    }
-  }
+  
 
          this.Given(/^that the quantity\-input box is displayed and filled in with a valid number$/, function (callback) {
          quantity=22;
          callback();
        });
           this.When(/^the user clicks the Add\-button in the quantity\-dialogue$/, function (callback) {
-         product=myApp.products[0],22;
+        
          callback();
        });
         
@@ -55,38 +52,51 @@ module.exports = function(){
        });
           
           this.Then(/^the product should be equal to our original data$/, function (callback) {
-         
+         product=== myApp.products[5];
          callback();
        });
 
           this.Given(/^that the cart already contains a product$/, function (callback) {
-         cart.add(myApp.products[10], 5);
+         previousQuantity=5
+         cart.add(myApp.products[10],5);
          callback();
        });
 
        this.When(/^the user add more than one of the same product in the cart$/, function (callback) {
+        quantityToAdd=2;
          cart.add(myApp.products[10],2);
          callback();
        });
        
        this.Then(/^the new quantity of product should be add to the cart$/, function (callback) {
          cart.add(myApp.products[10],7)
-         callback();
-       });
-       this.Given(/^that the shopping cart has already (\d+) products$/, function (arg1, callback) {
-         quantity=999
+
          
          callback();
        });
-        this.When(/^the user add (\d+) pcs beverages to shopping cart$/, function (arg1, callback) {
-         quantity=1000
+       this.Given(/^that the shopping cart has already (\d+) products$/, function (arg1, callback) {
+        previousQuantity = arg1;
+        cart = new ShoppingCart();
+        product=myApp.products[10]
+        cart.add(myApp.products, previousQuantity);
+
+        
+               
          callback();
        });
-         this.Then(/^should show an error$/, function (callback) {
-
-        assert("The quantity of the product is invalid.");
-      callback();
+        this.When(/^the user add (\d+) pcs beverages to shopping cart$/, function (arg1, callback) {
+         quantityToAdd = arg1;
+         cart.add(product,quantityToAdd);
+         callback();
        });
+
+        this.Then(/^should show an error$/, function (callback) { 
+       
+        
+          assert(quantity < 1000,"Trying to add product of > 999 quantity");
+          callback();
+       });
+
        // Test for a number of scenarios with non-valid data for quantity
         let quantityToTryWith;
         let currentDataType;
@@ -109,7 +119,7 @@ module.exports = function(){
          callback();
        });
 
-    this.When(/^try to add to shopping cart$/, function (callback) {
+    this.When(/^try to add quantity to shopping cart$/, function (callback) {
          try {
       new ShoppingCart(product, quantityToTryWith);
      }
@@ -118,19 +128,10 @@ module.exports = function(){
       }
       callback();
   });
-         this.Then(/^we should have an error$/, function (callback) {
-         assert(
-      error !== undefined,
-      " get an error when trying to add quantity to a shoppingCart with a " + currentDataType + " as quantity."
-    );
+  
+       this.Then(/^we should have an error$/, function (callback) {
+         assert(typeof quantity == 'number', "Trying to add a product with a non-numeric quantity");
          callback();
        });
 
-
-
-
-
-         }
-                    
-     
-      
+}

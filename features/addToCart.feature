@@ -18,7 +18,7 @@ The maximum quantity in the cart is 999 pcs
       Then the shopping cart should be update with right product
       And the product should be equal to our original data  
  
-  Scenario:that user can add more than one of the same Product
+  Scenario:that user can add more than one of the same product
    	  Given that user has a shopping cart 
       And that the cart already contains a product
       When the user add more than one of the same product in the cart 
@@ -31,9 +31,9 @@ The maximum quantity in the cart is 999 pcs
  	   Then should show an error 
 
     
-    Scenario Outline:  quantity of beverages should not be in <non-valid-data-type>
+    Scenario Outline:Quantity of beverages should not be in <non-valid-data-type>
 	    Given that user filled quantity-input box with a "<non-valid-data-type>" 
-	    When  try to add to shopping cart
+	    When try to add quantity to shopping cart
 	    Then we should have an error 
 
 	    Examples:

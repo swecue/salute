@@ -15,27 +15,32 @@ module.exports = class ShoppingCart {
 
     // should we allow a product that's already in the cart
     // to be added? or error? or add an extra quantity?
-
-
-
-
-   for(let i = 0; i < this.thingsToBuy.length; i++){
+for(let i = 0; i < this.thingsToBuy.length; i++){
       if(this.thingsToBuy[i].product === product){
         return i;
       }
     }
     return -1;
+    
     assert(product instanceof Product, "Trying to add a non-product to the cart");
     assert(typeof quantity == 'number', "Trying to add a product with a non-numeric quantity");
     assert(quantity > 0, "Trying to add a product of < 1 quantity");
+    assert(quantity < 1000,"Trying to add product of > 999 quantity");
+
+    let alreadyExistingItem = this.items.find(function(item){
+      return item.product.artikelid == product.artikelid;
+    });
+
+    if (alreadyExistingItem){
+      alreadyExistingItem.quantity += quantity;
+    } else {
 
     this.thingsToBuy.push({
       product: product,
       quantity: quantity
     });
   }
-
-
+}
   findProductInCart(product){
     // should we check that product is an instance of Product?
     for(let i = 0; i < this.thingsToBuy.length; i++){
@@ -71,7 +76,7 @@ module.exports = class ShoppingCart {
       "Can't remove a product not in the cart"
     );
 
-    // remove the item completely from the cart
+    // remove the item completelty from the cart
     this.thingsToBuy.splice(index, 1);
 
   }
@@ -90,5 +95,6 @@ module.exports = class ShoppingCart {
     // add a line sums into a total sum
 
   }
+
 
 }
