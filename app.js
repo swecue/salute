@@ -1,7 +1,7 @@
 // Read classes from other files
-let Person = require('./person.js');
-let Product = require('./product.js');
-let Category = require('./category.js');
+var Person = require('./person.js');
+var Product = require('./product.js');
+var Category = require('./category.js');
 
 class App {
 
@@ -12,7 +12,7 @@ class App {
 
     // Make instances of Product from the productdata
     this.products = [];
-    for(let p of productData){
+    for(var p of productData){
       this.products.push(new Product(p));
     }
 
@@ -30,25 +30,25 @@ class App {
 
     // Add a list of active/logged in user
     this.users = [];
-    
+
   }
 
   addUser(name,birthDate){
     this.users.push(new Person(name,birthDate));
   }
-  
+
   //placeholder method
   filter(filterString) {
-    
+
   }
 
-  
+
 }
 
 // Create an app to start our application
 let myApp = new App();
 
-// Exporting the app instance so that I can use it 
+// Exporting the app instance so that I can use it
 // in my test code (step definitions) via require
 module.exports = myApp;
 

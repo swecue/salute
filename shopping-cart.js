@@ -1,5 +1,5 @@
-let assert = require('assert');
-let Product = require('./product.js');
+var assert = require('assert');
+var Product = require('./product.js');
 
 module.exports = class ShoppingCart {
 
@@ -11,7 +11,7 @@ module.exports = class ShoppingCart {
     // should we check that the product
     // is an instanceOf Product ?
 
-    // should we 
+    // should we
     //check that quantity is
     // a positive integer?
 
@@ -22,8 +22,8 @@ module.exports = class ShoppingCart {
     assert(typeof quantity == 'number', "Trying to add a product with a non-numeric quantity");
     assert(quantity > 0, "Trying to add a product of < 1 quantity");
     assert(quantity < 1000,"Trying to add product of > 999 quantity");
-   
-    
+
+
 
     let existingProductIndex = this.findProductInCart(product);
 
@@ -60,7 +60,7 @@ module.exports = class ShoppingCart {
       "Can't change the quantity of a product not in the cart"
     );
 
-    
+
     this.thingsToBuy[index].quantity = newQuantity;
 
   }
