@@ -3,7 +3,7 @@ let ShoppingCart = require('./shopping-cart.js');
 
 module.exports = class Person {
 
-  constructor(name, age){
+  constructor(name, birthDate){
 
     // Throw an error if name is not an empty string
     assert(
@@ -12,8 +12,9 @@ module.exports = class Person {
     );
 
     this.name = name;
-    this.age = age;
+    this.birthDate = birthDate;
     this.shoppingCart = new ShoppingCart();
+
   }
 
 }

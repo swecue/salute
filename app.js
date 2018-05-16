@@ -33,14 +33,16 @@ class App {
     
   }
 
-  addUser(name,age){
-    this.users.push(new Person(name,age));
+  addUser(name,birthDate){
+    this.users.push(new Person(name,birthDate));
   }
   
   //placeholder method
   filter(filterString) {
     
   }
+
+  
 }
 
 // Create an app to start our application
