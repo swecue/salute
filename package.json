@@ -8,8 +8,8 @@
     "one-feature": "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f  ./features/buy-beverages.feature & exit 0",
     "Anna": "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f  ./features/buy-beverages.feature & exit 0",
     "Carl": "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f  ./features/buy.feature & exit 0",
-    "Poury": "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f  ./features/addToCart.feature & exit 0",
-    "Suma": "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f   ./features/buy-beverages.feature & exit 0",
+    "Poury": "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f  ./features/quantity-beverages.feature & exit 0",
+    "Suma": "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f   ./features/test.feature & exit 0",
     "Johan": "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f ./features/buy-beverages.feature & exit 0",
     "Urban": "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f  ./features/searchbox.feature & exit 0",
     "Gabriell": "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f  ./features/buy-beverages.feature & exit 0"
@@ -17,6 +17,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
     "selenium-cucumber-js": "^1.5.12"
   }
 }
