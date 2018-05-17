@@ -1,4 +1,3 @@
-console.log("hej");
-$("#wow").click(function() {
-  $("body").css({ backgroundColor: "blue" });
+$('#wow').click(function() {
+  $('body').css({ backgroundColor: 'blue' });
 });
