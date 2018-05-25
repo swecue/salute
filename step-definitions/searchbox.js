@@ -10,7 +10,8 @@ module.exports = function() {
   this.Given(
     /^that the user has entered a searchstring of at least three letters$/,
     function(callback) {
-      userInput = "vin";
+      userInput = "ries";
+
       callback();
     }
   );
@@ -67,9 +68,7 @@ module.exports = function() {
       for (product of searchResult) {
         // assert that the searchResult corresponds to userInput
         assert(
-          product.varugrupp.includes(userInput) ||
-            product.namn.includes(userInput) ||
-            product.namn2.includes(userInput),
+          product.ursprunglandnamn.includes(userInput),
           "Product in searchResult is not from userInput"
         );
       }
@@ -101,7 +100,7 @@ module.exports = function() {
     for (product of searchResult) {
       // assert that the searchResult corresponds to userInput
       assert(
-        product.varnummer.includes(userInput),
+        product.varnummer == userInput,
         "Product in searchResult is not from userInput"
       );
     }
@@ -133,10 +132,10 @@ module.exports = function() {
     function(callback) {
       for (product of searchResult) {
         // assert that the searchResult corresponds to userInput
+        console.log(product.namn.charAt(0), "========", userInput);
         assert(
-          product.varugrupp.includes(userInput) ||
-            product.namn.includes(userInput) ||
-            product.namn2.includes(userInput),
+          product.namn.charAt(0) == userInput ||
+            product.namn2.charAt(0) == userInput,
           "Product in searchResult is not from userInput"
         );
       }
