@@ -14,7 +14,7 @@
     "Carl":
       "node node_modules/selenium-cucumber-js/index.js -d -b chrome -f  ./features/sel-cartContentOverview.feature & exit 0",
     "Poury":
-      "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f  ./features/addToCart.feature & exit 0",
+      "node node_modules/selenium-cucumber-js/index.js -d -b chrome -f  ./features/addToCart.feature & exit 0",
     "Suma":
       "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f   ./features/buy-beverages.feature & exit 0",
     "Johan":
