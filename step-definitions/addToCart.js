@@ -1,7 +1,7 @@
 let myApp = require("../app.js");
-let ShoppingCart = require("../shopping-cart.js");
+let ShoppingCart = require("../js/classes/shopping-cart.js");
 let assert = require("assert");
-let Product = require("../product.js");
+let Product = require("../js/classes/product.js");
 
 module.exports = function() {
   let cart;

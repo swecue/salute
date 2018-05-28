@@ -1,5 +1,8 @@
 let assert = require("assert");
 module.exports = function() {
+  function $(selector) {
+    return driver.findElement(by.css(selector));
+  }
   function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
@@ -17,8 +20,8 @@ module.exports = function() {
   this.Then(/^user is happy$/, async function() {
     let body = await driver.findElement(by.css("body"));
     let bgColor = await body.getCssValue("background-color");
-
-    //  assert(bgColor == "rgba(0, 0, 255, 1)", "The background turned blue!");
+    await sleep(1000);
+    assert(bgColor == "rgba(0, 0, 255, 1)", "The background turned blue!");
     console.log(" end");
   });
 };

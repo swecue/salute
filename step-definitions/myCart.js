@@ -1,6 +1,6 @@
 let assert = require("assert");
 let myApp = require("../app.js");
-let ShoppingCart = require("../shopping-cart.js");
+let ShoppingCart = require("../js/classes/shopping-cart.js");
 
 module.exports = function() {
   //Define global variables in order to compare them later on

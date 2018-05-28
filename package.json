@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+{
+  "name": "sel-cucumber-template",
+  "version": "1.0.0",
+  "description": "A template for using cucumber and selenium",
+  "main": "app.js",
+  "scripts": {
+    "test":
+      "node ./node_modules/selenium-cucumber-js/index.js -d -b phantomjs && exit 1",
+    "one-feature":
+      "node node_modules/selenium-cucumber-js/index.js  -b chrome -f  ./features/sel-searchbox.feature & exit 0",
+    "Anna":
+      "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f  ./features/changeQuantityInCart.feature & exit 0",
+    "Carl":
+      "node node_modules/selenium-cucumber-js/index.js -d -b chrome -f  ./features/sel-cartContentOverview.feature & exit 0",
+    "Poury":
+      "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f  ./features/addToCart.feature & exit 0",
+    "Suma":
+      "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f   ./features/buy-beverages.feature & exit 0",
+    "Johan":
+      "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f ./features/myCart.feature & exit 0",
+    "Urban":
+      "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f  ./features/searchbox.feature & exit 0",
+    "Gabriell":
+      "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f  ./features/buy-beverages.feature & exit 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "selenium": "^2.20.0",
+    "selenium-cucumber-js": "^1.5.12"
+  }
+}
+=======
 {
   "name": "sel-cucumber-template",
   "version": "1.0.0",
@@ -24,3 +61,4 @@
     "selenium-cucumber-js": "^1.5.12"
   }
 }
+>>>>>>> master

@@ -1,7 +1,7 @@
 // Read classes from other files
-var Person = require("./person.js");
-var Product = require("./product.js");
-var Category = require("./category.js");
+var Person = require("./js/classes/person.js");
+var Product = require("./js/classes/product.js");
+var Category = require("./js/classes/category.js");
 
 class App {
   constructor() {
@@ -34,7 +34,7 @@ class App {
       this.categories.push(new Category(catName, this.products));
     }
 
-    // Make a "dictionary" based on category namess
+    // Make a "dictionary" based on category names
     this.categoryByName = {};
     for (let category of this.categories) {
       this.categoryByName[category.name] = category;

@@ -1,30 +1,120 @@
-<!DOCTYPE html><html><head>
-  <meta charset="utf-8">
-  <title>Mr. Shopper</title>
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- <link rel="stylesheet" href="./css/main.css"> -->
-  <!-- <link rel="stylesheet" href="./libs/bootstrap.min.css"> -->
+    <script src="./fake-module.js"></script>
+    <script src="./node_modules/chai/chai.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/libs/bootstrap.css">
 
-  <script src="./fake-module.js"></script>
-  <script src="./node_modules/chai/chai.js"></script>
-  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <title>Salute!</title>
+  </head>
+  <body>
 
-  <!-- <script src="./libs/jquery.min.js"></script> -->
-  <!-- <script src="./libs/tether.js"></script> -->
-  <!-- <script src="./libs/bootstrap.min.js"></script> -->
-  <!-- <script src="./category.js"></script> -->
-  <!-- <script src="./card.js"></script> -->
-  <!-- <script src="./person.js"></script> -->
-  <!-- <script src="./product.js"></script> -->
-  <!-- <script src="./app.js" defer></script> -->
+    <!-- A small developer tool for showing
+         what Bootstrap considers to be the current
+         screen size -->
 
-</head>
+    <div class="fixed-top">
+      <div class="float-right btn btn-danger btn-sm">
 
-<body>
-  <h1>Hello World!</h1>
+        <div class="d-block d-sm-none">xs</div>
+        <div class="d-none d-sm-block d-md-none">sm</div>
+        <div class="d-none d-md-block d-lg-none">md</div>
+        <div class="d-none d-lg-block">lg</div>
 
-<button id="wow"> Click me!</button>
+      </div>
+    </div>
 
-  <script src="./test-frontend.js"></script>
-</body>
+
+    <header>
+
+      <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-around">
+        <a class="navbar-brand d-flex w-50 mr-auto" href="index.html"><h0>SALUTÉ</h0></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse w-100 d-flex" id="navbar">
+          <ul class="nav navbar-nav ml-auto w-100 justify-content-around">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html" id="nav-home-btn" id="nav-products-btn"><h3>HOME</h3><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productlist.html"><h3>PRODUCTS</h3></a>
+            </li>
+            <li class="nav-itemx">
+              <a class="nav-link" href="contact.html" id="nav-contact-btn"><h3>CONTACT</h3></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" id="nav-about-btn"><h3>ABOUT</h3></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mycart.html" id="nav-shopping-cart-btn"><img width="40px" src="images/cart.png" alt="cart"></a>
+            </li>
+          </ul>
+
+        </div>
+
+      </nav>
+
+      <div class="form-group row">
+        <div class="col-4"></div>
+        <div class="col-6">
+          <input class="form-control" type="search" placeholder="Search" value="" id="sb-input-field">
+        </div>
+        <div class="col-2">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="sb-searchbtn">Search</button>
+      </div>
+      </div>
+    </header>
+
+    <main class="container-fluid mt-3" >
+      <h1>Headline</h1>
+      <div class="row d-flex justify-content-around">
+
+         <div class="d-inline-block text-left">
+           <img class="img-fluid rounded float-left" src="images/wine.png" alt="cart">
+         </div>
+         <div class="d-inline-block text-center">
+           <img class="img-fluid rounded float-none" src="images/beer.png" alt="cart">
+         </div>
+         <div class="d-inline-block text-right">
+           <img class="img-fluid rounded float-right" src="images/spirits.png" alt="cart">
+         </div><!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="col-12 col-sm-4 order-1 order-sm-2 mb-4 mb-sm-0">
+
+          <div class="card">
+            <img class="card-img-top" src="images/cat-in-snow.jpg" alt="Four cats in the snow.">
+            <div class="card-body">
+              <p class="card-text">Four cats having fun in the snow, early November 2012.</p>
+            </div>
+          </div> -->
+
+
+
+
+      </div><!-- ends the row -->
+    </main><!-- ends the container -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/libs/jquery.js"></script>
+    <script src="js/libs/popper.js"></script>
+    <script src="js/libs/bootstrap.js"></script>
+
+  </body>
 </html>
