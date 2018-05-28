@@ -1,5 +1,5 @@
 var assert = require("assert");
-var myApp = require("./app.js");
+var myApp = require("../../app.js");
 module.exports = class SearchBox {
   //  constructor(){   }
 
@@ -36,3 +36,7 @@ module.exports = class SearchBox {
     return results;
   }
 };
+/*render
+event listeners
+create html
+*/

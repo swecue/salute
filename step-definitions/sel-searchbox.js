@@ -1,5 +1,4 @@
 let assert = require("assert");
-//let searchBox = require("../search-box-class.js");
 
 module.exports = function() {
   async function $(selector) {
@@ -42,9 +41,9 @@ module.exports = function() {
       }
     }
   );
-  this.When(/^the user clicks the search icon$/, async function() {
-    let theButton = await $("#searchicon");
-    assert(theButton, "The #searchicon doesn't exist");
+  this.When(/^the user clicks the search button$/, async function() {
+    let theButton = await $("#sb-searchbtn");
+    assert(theButton, "The #sb-searchbtn doesn't exist");
     if (theButton) {
       await theButton.click();
       await sleep(1000);
@@ -59,8 +58,8 @@ module.exports = function() {
       let giveUpAfter = 100;
       let searchlist;
       do {
-        sleep(100);
-        giveUppAter--;
+        await sleep(100);
+        giveUpAfter--;
         searchlist = await $(".searchlist");
       } while (!searchlist && giveUpAfter > 0);
       await sleep(1000);
@@ -80,7 +79,7 @@ module.exports = function() {
           }
         }
         assert(
-          jordanCo === 7, // because we have checked in the sortiment.json and there are 7
+          jordanCo === 7,
           "Didn't find 7 products with the namn Jordan when searching for 'jord'"
         );
       }

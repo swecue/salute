@@ -1,5 +1,5 @@
 let assert = require("assert");
-let SearchBox = require("../search-box-class.js");
+let SearchBox = require("../js/classes/search-box-class.js");
 let app = require("../app.js");
 
 module.exports = function() {
