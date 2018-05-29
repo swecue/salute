@@ -16,7 +16,7 @@ module.exports = function(){
          callback();
        });
 
-       this.When(/^the user opens the overview page$/, function (callback) {
+       this.When(/^the user opens the overview page$/, async function (callback) {
            await helpers.loadPage("http://localhost:3000/mycart.html");
            await sleep(1000);
          callback();
