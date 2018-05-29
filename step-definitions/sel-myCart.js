@@ -7,7 +7,7 @@ module.exports = function() {
     return await driver.findElement(by.css(selector));
   }
 
-<<<<<<< HEAD
+
        this.Given(/^at least one item in cart$/, function (callback) {
          myApp.users[0].shoppingCart.removeAllItems();
          myApp.users[0].shoppingCart.add(myApp.products[5], 2);
@@ -65,11 +65,10 @@ module.exports = function() {
           // Write code here that turns the phrase above into concrete actions
           callback();
         });
-=======
+
   async function sleep(ms = 1000) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
->>>>>>> master
 
   this.Given(/^that the user does not have the page open$/, async function(callback) {
     await sleep();

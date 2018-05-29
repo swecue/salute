@@ -15,21 +15,16 @@ module.exports = function() {
 
   this.Given(/^that I'm at the product page$/, async function () {
          await helpers.loadPage('http://localhost:3000');
+         console.log("it works");
          await sleep(1000);
        });
 
 
      this.When(/^I click the add product to cart button$/,async function () {
-         let theButton = await $('#sbadd product');
+         let theButton = await driver.findElement(by.css(".Add-btn"));
     await theButton.click();
-
-   
-    assert(theButton, "The #sb-addbtn doesn't exist");
-    if (theButton) {
-      await theButton.click();
-      await sleep(1000);
-    }
   });
+   
 
          
        
