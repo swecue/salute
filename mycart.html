@@ -73,8 +73,7 @@
 
     </header>
 
-    <main class="container mt-3">
-
+    <main class="container mt-3"> <!-- //shopping-cart needs to be in this div-->
       <div class="row">
         <div class="col-12">
           <h1>Headline</h1>
@@ -82,7 +81,11 @@
       </div>
 
       <div class="row">
-       <div class="col-12 col-sm-8 order-2 order-sm-1">
+       <div class="col-12 col-sm-8 order-2 order-sm-1"> <!--//product needs to be in this div -->
+         <ul class="shopping-cart mt-2">
+
+         </ul>
+
           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -109,10 +112,13 @@
 
 
     <!-- Optional JavaScript -->
+    <script src="js/myCart-render.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/libs/jquery.js"></script>
     <script src="js/libs/popper.js"></script>
     <script src="js/libs/bootstrap.js"></script>
+
 
   </body>
 </html>
