@@ -16,28 +16,18 @@ class App {
     let categoryData;
 
     if (typeof window !== "undefined") {
-      this.loadUser();
 
       this._loaded = new Promise(async (resolve, reject) => {
         try {
           productData = await require("./json/sortiment.json");
           categoryData = await require("./json/categories.json");
           this.constructorContinued(productData, categoryData);
+          this.loadUser();
           resolve()
         } catch (er) {
           reject(er)
         }
       })
-
-      /*
-      (async () => {
-        productData = await require("./json/sortiment.json");
-        categoryData = await require("./json/categories.json");
-        this.constructorContinued(productData, categoryData);
-        this.callback && this.callback()
-
-      })();
-      */
     } else {
       productData = require("./json/sortiment.json");
       categoryData = require("./json/categories.json");
@@ -46,7 +36,6 @@ class App {
   }
 
   loadUser() {
-    console.log(localStorage.getItem('user') === null);
     if (localStorage.getItem('user') === null) {
       this.addUser('Customer', 18);
       localStorage.setItem('user', JSON.stringify(this.users[0]));
@@ -92,14 +81,3 @@ let myApp = new App();
 // Exporting the app instance so that I can use it
 // in my test code (step definitions) via require
 module.exports = myApp;
-
-// Check if we can look up categoryByName
-// console.log(myApp.categoryByName["Rött vin från Spanien"]);
-
-// Quick test of users and shopping carts
-/*
-myApp.addUser('Anna', 25);
-myApp.users[0].shoppingCart.add(myApp.products[0], 10);
-myApp.users[0].shoppingCart.add(myApp.products[551], 99);
-console.log (myApp.users[0].shoppingCart.thingsToBuy)
-*/
