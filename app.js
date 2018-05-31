@@ -34,10 +34,7 @@ class App {
         productData = await require("./json/sortiment.json");
         categoryData = await require("./json/categories.json");
         this.constructorContinued(productData, categoryData);
-        this.callback && this.callback()
-
       })();
-      */
     } else {
       productData = require("./json/sortiment.json");
       categoryData = require("./json/categories.json");
