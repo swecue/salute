@@ -11,6 +11,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/libs/bootstrap.css">
 
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+
+    <!-- Application specific JavaScript -->
+
+    <script src="js/classes/category.js"></script>
+    <script src="js/classes/product.js"></script>
+    <script src="./app.js" defer></script>
+
     <title>Salute!</title>
   </head>
   <body>
@@ -73,36 +83,48 @@
 
     </header>
 
-    <main class="container mt-3">
+    <main class="container-fluid d-flex justify-content-around mt-3">
 
-      <div class="row">
-        <div class="col-12">
-          <h1>Headline</h1>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Product</h1>
+          </div>
+          <div class="col">
+
+          </div>
         </div>
-      </div>
+        <div class="row">
+          <div class="col-2" id="singleproductimg">
 
-      <div class="row">
-       <div class="col-12 col-sm-8 order-2 order-sm-1">
-          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-8">
+            <div class="h3" id="singleproduct">products go here this is just text for now</div>
+          </div>
+          <div class="col-2">
+
+          </div>
         </div>
+        <div class="row form-group d-flex">
+          <div class="col-4">
 
-        <div class="col-12 col-sm-4 order-1 order-sm-2 mb-4 mb-sm-0">
-
-          <div class="card">
-            <img class="card-img-top" src="images/cat-in-snow.jpg" alt="Four cats in the snow.">
-            <div class="card-body">
-              <p class="card-text">Four cats having fun in the snow, early November 2012.</p>
+          </div>
+          <div class="col-4">
+            <div class="col">
+              <label for="colFormLabel" class="col-form-label float-right">Input Quantity</label>
             </div>
-          </div> -->
-
-        </div>
-
-      </div><!-- ends the row -->
+          </div>
+          <div class="col-2">
+            <div>
+            <input class="form-control quant" type="number" value="1" id="add-q-input-field">
+            </div>
+          </div>
+          <div class="col-2">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="add-btn">Add To Cart</button>
+          </div>
+        </div><!-- ends the row -->
+      </div>
 
     </main><!-- ends the container -->
 
@@ -113,6 +135,14 @@
     <script src="js/libs/jquery.js"></script>
     <script src="js/libs/popper.js"></script>
     <script src="js/libs/bootstrap.js"></script>
+
+    <script src="js/singleproduct.js"></script>
+    <script src="js/addproduct.js"></script>
+    <script src="js/classes/category.js"></script>
+    <script src="js/classes/product.js"></script>
+    <script src="js/classes/shopping-cart.js"></script>
+
+    <script src="./app.js"></script>
 
   </body>
 </html>
