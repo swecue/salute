@@ -28,13 +28,6 @@ class App {
           reject(er)
         }
       })
-
-      /*
-      (async () => {
-        productData = await require("./json/sortiment.json");
-        categoryData = await require("./json/categories.json");
-        this.constructorContinued(productData, categoryData);
-      })();
     } else {
       productData = require("./json/sortiment.json");
       categoryData = require("./json/categories.json");
@@ -88,14 +81,3 @@ let myApp = new App();
 // Exporting the app instance so that I can use it
 // in my test code (step definitions) via require
 module.exports = myApp;
-
-// Check if we can look up categoryByName
-// console.log(myApp.categoryByName["Rött vin från Spanien"]);
-
-// Quick test of users and shopping carts
-/*
-myApp.addUser('Anna', 25);
-myApp.users[0].shoppingCart.add(myApp.products[0], 10);
-myApp.users[0].shoppingCart.add(myApp.products[551], 99);
-console.log (myApp.users[0].shoppingCart.thingsToBuy)
-*/
