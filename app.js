@@ -16,13 +16,13 @@ class App {
     let categoryData;
 
     if (typeof window !== "undefined") {
-      this.loadUser();
 
       this._loaded = new Promise(async (resolve, reject) => {
         try {
           productData = await require("./json/sortiment.json");
           categoryData = await require("./json/categories.json");
           this.constructorContinued(productData, categoryData);
+          this.loadUser();
           resolve()
         } catch (er) {
           reject(er)
@@ -46,7 +46,6 @@ class App {
   }
 
   loadUser() {
-    console.log(localStorage.getItem('user') === null);
     if (localStorage.getItem('user') === null) {
       this.addUser('Customer', 18);
       localStorage.setItem('user', JSON.stringify(this.users[0]));
