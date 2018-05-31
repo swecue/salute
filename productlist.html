@@ -10,148 +10,99 @@
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/libs/bootstrap.css">
+
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
+
+
+    <!-- Application specific JavaScript -->
+    <script src="js/productlist.js"></script>
+  	<script src="js/classes/category.js"></script>
+    <script src="js/classes/product.js"></script>
+    <script src="./app.js" defer></script>
 
     <title>Salute!</title>
   </head>
   <body>
 
-    <!-- A small developer tool for showing
-         what Bootstrap considers to be the current
-         screen size -->
-
-    <div class="fixed-top">
-      <div class="float-right btn btn-danger btn-sm">
-
-        <div class="d-block d-sm-none">xs</div>
-        <div class="d-none d-sm-block d-md-none">sm</div>
-        <div class="d-none d-md-block d-lg-none">md</div>
-        <div class="d-none d-lg-block">lg</div>
-
-      </div>
-    </div>
 
 
-    <header>
+      <!-- A small developer tool for showing
+           what Bootstrap considers to be the current
+           screen size -->
 
-      <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-around">
-        <a class="navbar-brand d-flex w-50 mr-auto" href="index.html"><h0>SALUTÉ</h0></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="fixed-top">
+        <div class="float-right btn btn-danger btn-sm">
 
-        <div class="navbar-collapse collapse w-100 d-flex" id="navbar">
-          <ul class="nav navbar-nav ml-auto w-100 justify-content-around">
-            <li class="nav-item ">
-              <a class="nav-link" href="index.html" id="nav-home-btn"><h3>HOME</h3></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="productlist.html" id="nav-products-btn"><h3>PRODUCTS</h3><span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html" id="nav-contact-btn"><h3>CONTACT</h3></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html" id="nav-about-btn"><h3>ABOUT</h3></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mycart.html" id="nav-shopping-cart-btn"><img width="40px" src="images/cart.png" alt="cart"></a>
-            </li>
-          </ul>
+          <div class="d-block d-sm-none">xs</div>
+          <div class="d-none d-sm-block d-md-none">sm</div>
+          <div class="d-none d-md-block d-lg-none">md</div>
+          <div class="d-none d-lg-block">lg</div>
 
         </div>
-
-      </nav>
-
-      <div class="form-group row">
-        <div class="col-4"></div>
-        <div class="col-6">
-          <input class="form-control" type="search" placeholder="Search" value="" id="#sb-input-field">
-        </div>
-        <div class="col-2">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="#sb-searchbtn">Search</button>
-      </div>
       </div>
 
-    </header>
 
-    <main class="container-fluid mt-3">
+      <header>
 
-          <h1>PRODUCTS</h1>
+        <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-around">
+          <a class="navbar-brand d-flex w-50 mr-auto" href="index.html"><h0>SALUTÉ</h0></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-      <div class="row d-flex justify-content-around">
+          <div class="navbar-collapse collapse w-100 d-flex" id="navbar">
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-around">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html" id="nav-home-btn"><h3>HOME</h3></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="productlist.html" id="nav-products-btn"><h3>PRODUCTS</h3><span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" id="nav-contact-btn"><h3>CONTACT</h3></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" id="nav-about-btn"><h3>ABOUT</h3></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mycart.html" id="nav-shopping-cart-btn"><img width="40px" src="images/cart.png" alt="cart"></a>
+              </li>
+            </ul>
 
-         <div d-inline-block>
-
-         <!-- <dt class="h3 btn-link" onclick="location.href = 'product.html'" id="A"> A </dt> -->
-         <dt class="h3 btn-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="A"> A </dt>
-
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              <table id="table" data-height="460">
-                <thead>
-                  <tr>
-                    <th data-field="id">Item ID</th>
-                    <th data-field="name">Item Name</th>
-                    <th data-field="price">Item Price</th>
-                  </tr>
-                </thead>
-              </table>
-            </div>
           </div>
-         <dt class="h3 btn-link" href="product.html" id="B"> B </dt>
-         <dt class="h3 btn-link" href="product.html" id="C"> C </dt>
-         <dt class="h3 btn-link" href="product.html" id="D"> D </dt>
-         <dt class="h3 btn-link" href="product.html" id="E"> E </dt>
-         <dt class="h3 btn-link" href="product.html" id="F"> F </dt>
-         <dt class="h3 btn-link" href="product.html" id="G"> G </dt>
-         <dt class="h3 btn-link" href="product.html" id="H"> H </dt>
-       </div>
-       <div d-inline-block>
 
-         <dt class="h3 btn-link" href="product.html" id="I"> I </dt>
-         <dt class="h3 btn-link" href="product.html" id="J"> J </dt>
-         <dt class="h3 btn-link" href="product.html" id="K"> K </dt>
-         <dt class="h3 btn-link" href="product.html" id="L"> L </dt>
-         <dt class="h3 btn-link" href="product.html" id="M"> M </dt>
-         <dt class="h3 btn-link" href="product.html" id="N"> N </dt>
-         <dt class="h3 btn-link" href="product.html" id="O"> O </dt>
-         <dt class="h3 btn-link" href="product.html" id="P"> P </dt>
-       </div>
-       <div d-inline-block>
+        </nav>
 
-         <dt class="h3 btn-link" href="product.html" id="Q"> Q </dt>
-         <dt class="h3 btn-link" href="product.html" id="R"> R </dt>
-         <dt class="h3 btn-link" href="product.html" id="S"> S </dt>
-         <dt class="h3 btn-link" href="product.html" id="T"> T </dt>
-         <dt class="h3 btn-link" href="product.html" id="U"> U </dt>
-         <dt class="h3 btn-link" href="product.html" id="V"> V </dt>
-         <dt class="h3 btn-link" href="product.html" id="W"> W </dt>
-         <dt class="h3 btn-link" href="product.html" id="X"> X </dt>
-       </div>
-       <div d-inline-block>
+        <div class="form-group row">
+          <div class="col-4"></div>
+          <div class="col-6">
+            <input class="form-control" type="search" placeholder="Search" value="" id="#sb-input-field">
+          </div>
+          <div class="col-2">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="#sb-searchbtn">Search</button>
+        </div>
+        </div>
 
-         <dt class="h3 btn-link" href="product.html" id="Z"> Z </dt>
-         <dt class="h3 btn-link" href="product.html" id="Y"> Y </dt>
-         <dt class="h3 btn-link" href="product.html" id="Å"> Å </dt>
-         <dt class="h3 btn-link" href="product.html" id="Ä"> Ä </dt>
-         <dt class="h3 btn-link" href="product.html" id="Ö"> Ö </dt>
-         <dt class="h3 btn-link" href="product.html" id="0"> ... </dt>
+      </header>
 
+      <main class="container-fluid mt-3">
 
-       </div>
-      </div><!-- ends the row -->
+            <h1>PRODUCTS</h1>
 
-    </main><!-- ends the container -->
+        <div class="row d-flex justify-content-around">
+
+        <div class="products-container h4"></div>
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/libs/jquery.js"></script>
-    <script src="js/libs/popper.js"></script>
-    <script src="js/libs/bootstrap.js"></script>
+    </div><!-- ends the row -->
+
+  </main><!-- ends the container -->
+
+
+
+
 
   </body>
-</html>
+  </html>
