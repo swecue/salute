@@ -11,9 +11,12 @@
     <link   rel="stylesheet" href="css/main.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/libs/bootstrap.css">
-    <script src="product.js"></script>
+    <script src="js/classes/product.js"></script>
+    <script src="js/classes/shopping-cart.js"></script>
+    <script src="js/classes/category.js"></script>
     <script src="app.js"></script>
-    <script src="shopping-cart.js"></script>
+     <script src="js/addproduct.js"></script>
+
 
     <title>Salute!</title>
   </head>
@@ -80,20 +83,12 @@
 
   <main> 
     <div class="row">
-      <div class="column-labels">
-        <label class="product-image">Image</label>
-        <label class="product-details">Product</label>
-        
-        
-      
-      </div>
-
       <div class="product">
         <div class="product-image">
           <img src="Images/beer.png">
         </div>
         <div class="product-details">
-          <div class="product-title">Dingo Dog Bones</div>
+          <div class="product-title">Beer</div>
           <p class="product-description">The best dog bones of all time. Holy crap. Your dog will be begging for these things! I got curious once and ate one myself. I'm a fan.</p>
         </div>
         <div class="product-price ">Price:12.75kr
@@ -105,7 +100,9 @@
         
         
       <div>
-        <button type="button" class="btn btn-success" id="Add-btn" onclick= "mycart.html" id="Add-btn"">AddToCart</button>
+        <a href="mycart.html">
+          <button type="button" class="btn btn-success" id="Add-btn">AddToCart</button>
+        </a>
         
 
       </div>
@@ -121,7 +118,7 @@
     <script src="js/libs/jquery.js"></script>
     <script src="js/libs/popper.js"></script>
     <script src="js/libs/bootstrap.js"></script>
-    <script src="./sin-product.js"></script>
+   
 
   </body>
 </html>

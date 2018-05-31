@@ -28,20 +28,23 @@ module.exports = function() {
   
         
 
-   this.Then(/^the shopping cart overview should shows the added product$/,async function  {
+   this.Then(/^the shopping cart overview should shows the added product$/,async function(){
          await helpers.loadPage("http://localhost:3000/mycart.html");
+        await sleep(1000);
          
        });
 
-       this.When(/^I click  to fill the quantity\-input box cart$/,  {
-         async function() {
-      let userInput = "jord";
-      let field = await $("#sb-input-field");
-      assert(field, "The #sb-input-field doesn't exist");
+       this.When(/^I click to fill the quantity\-input box cart$/, async function() {
+      let userInput = 22;
+      let field = await $('input[type="number"]');
+      assert(field, "The doesn't exist");
       if (field) {
         console.warn("FIELD", field);
-        field.sendKeys(userInput);
+        await field.clear();
+        await field.sendKeys(userInput);
         await sleep(1000);
+        // click the add-to-cart button
+
       }
     }
   );
@@ -49,8 +52,8 @@ module.exports = function() {
        
    
        this.Then(/^the shopping cart overview should shows the added number$/, function (callback) {
-         // Write code here that turns the phrase above into concrete actions
-         callback(null, 'pending');
+         
+         callback();
        });
 
          
