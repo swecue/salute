@@ -4,16 +4,37 @@ var Product = require("./js/classes/product.js");
 var Category = require("./js/classes/category.js");
 
 class App {
+  
+  get loaded() {
+    return this._loaded
+  }
+
   constructor() {
     let productData;
     let categoryData;
 
     if (typeof window !== "undefined") {
+
+      this._loaded = new Promise(async (resolve, reject) => {
+          try {
+            productData = await require("./json/sortiment.json");
+            categoryData = await require("./json/categories.json");
+            this.constructorContinued(productData, categoryData);
+            resolve()
+          } catch(er) {
+            reject(er)
+          }
+        })
+
+      /*
       (async () => {
         productData = await require("./json/sortiment.json");
         categoryData = await require("./json/categories.json");
         this.constructorContinued(productData, categoryData);
+        this.callback && this.callback()
+
       })();
+      */
     } else {
       productData = require("./json/sortiment.json");
       categoryData = require("./json/categories.json");
