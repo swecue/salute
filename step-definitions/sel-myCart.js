@@ -22,7 +22,7 @@ module.exports = function() {
   });
 
   this.Then(/^the user should see the correct amount of items in cart$/, async function() {
-    let numItems = await $(".shopping-cart");
+    let numItems = await $(".shopping-cart .product");
     assert(numItems === 1, "The amount of items in cart is not correct, expected 1");
     await sleep(100);
   });
@@ -46,7 +46,7 @@ module.exports = function() {
 
 
   this.Then(/^the user should see no items in the cart$/, async function() {
-    let numItems = await $(".shopping-cart");
+    let numItems = await $(".shopping-cart .product");
     assert(numItems === null, "The amount of items in cart is not correct, expected 0");
     await sleep(100);
   });
@@ -70,7 +70,7 @@ module.exports = function() {
   });
 
   this.Then(/^the user should see the number of items in cart as previously$/, async function() {
-    let numItems = await $(".shopping-cart");
+    let numItems = await $(".shopping-cart .product");
     assert(numItems === 1, "The amount of items in cart is not correct, expected 1");
     await sleep(100);
   });
