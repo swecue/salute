@@ -8,14 +8,21 @@
     <script src="./fake-module.js"></script>
     <script src="./node_modules/chai/chai.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <link   rel="stylesheet" href="css/main.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/libs/bootstrap.css">
+    <script src="js/classes/product.js"></script>
+    <script src="js/classes/shopping-cart.js"></script>
+    <script src="js/classes/category.js"></script>
+    <script src="app.js"></script>
+     <script src="js/addproduct.js"></script>
+
 
     <title>Salute!</title>
   </head>
   <body>
 
-    <!-- A small developer tool for showing
+    <!-- A small developer tool for s<script src="./js/main.js"></script>howing
          what Bootstrap considers to be the current
          screen size -->
 
@@ -70,37 +77,35 @@
         <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="sb-searchbtn">Search</button>
       </div>
       </div>
+</header>
+<body>
+  <head></head>
 
-    </header>
-
-    <main class="container mt-3">
-
-      <div class="row">
-        <div class="col-12">
-          <h1>Headline</h1>
+  <main> 
+    <div class="row">
+      <div class="product">
+        <div class="product-image">
+          <img src="Images/beer.png">
+        </div>
+        <div class="product-details">
+          <div class="product-title">Beer</div>
+          <p class="product-description">The best dog bones of all time. Holy crap. Your dog will be begging for these things! I got curious once and ate one myself. I'm a fan.</p>
+        </div>
+        <div class="product-price ">Price:12.75kr
+        </div>
+        <div class="product-quantity">
+          <input type="number" value="2" min="1">
         </div>
       </div>
+        
+        
+      <div>
+        <a href="mycart.html">
+          <button type="button" class="btn btn-success" id="Add-btn">AddToCart</button>
+        </a>
+        
 
-      <div class="row">
-       <div class="col-12 col-sm-8 order-2 order-sm-1">
-          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-        <div class="col-12 col-sm-4 order-1 order-sm-2 mb-4 mb-sm-0">
-
-          <div class="card">
-            <img class="card-img-top" src="images/cat-in-snow.jpg" alt="Four cats in the snow.">
-            <div class="card-body">
-              <p class="card-text">Four cats having fun in the snow, early November 2012.</p>
-            </div>
-          </div> -->
-
-        </div>
+      </div>
 
       </div><!-- ends the row -->
 
@@ -113,6 +118,9 @@
     <script src="js/libs/jquery.js"></script>
     <script src="js/libs/popper.js"></script>
     <script src="js/libs/bootstrap.js"></script>
+   
 
   </body>
 </html>
+
+

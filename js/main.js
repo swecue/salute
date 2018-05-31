@@ -38,5 +38,9 @@ $(document).ready(function() {
     $("#result").html("");
     // YOUR CUSTOM URL HERE:
     window.location.href = "searchresult.html" + click_text;
+
   });
+  $('.Add-btn').click(function() {
+  $('body').css({ backgroundColor: 'blue' });
+});
 });

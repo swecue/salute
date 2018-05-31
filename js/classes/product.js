@@ -6,4 +6,7 @@ module.exports = class Product {
     Object.assign(this, data);
   }
 
+
 }
+
+

@@ -42,6 +42,10 @@ class App {
     }
   }
 
+  runWaitingFunctions(){
+    if (c) { c(); }
+  }
+
   constructorContinued(productData, categoryData) {
     // Make instances of Product from the productdata
     this.products = [];
