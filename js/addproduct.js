@@ -1,25 +1,27 @@
-function c(){
+function c() {
   const app = myApp;
 
-  const addButton = document.querySelector('#Add-btn')
-  addButton.removeAttribute('disabled')
+  const addButton = document.querySelector("#add-btn");
+  addButton.removeAttribute("disabled");
 
-  const productId = parseInt(new URLSearchParams(location.search).get('varnummer'), 10)
-  const product = app.products.find(p => p.varnummer === productId)
+  const productId = parseInt(
+    new URLSearchParams(location.search).get("varnummer"),
+    10
+  );
+  const product = app.products.find(p => p.varnummer === productId);
 
   if (!product) {
-    throw new Error(`Product by id ${productId} was not found`)
+    throw new Error(`Product by id ${productId} was not found`);
   }
 
   const shoppingCart = myApp.users[0].shoppingCart;
 
-  addButton.addEventListener('click', event => {
+  addButton.addEventListener("click", event => {
+    const quantityInput = document.querySelector("#add-q-input-field");
+    const quantity = parseInt(quantityInput.value, 10);
 
-    const quantityInput = document.querySelector('.product-quantity input')
-    const quantity = parseInt(quantityInput.value, 10)
+    shoppingCart.add(product, quantity);
 
-    shoppingCart.add(product, quantity)
-
-    console.log(shoppingCart.thingsToBuy)
-  })
+    console.log(shoppingCart.thingsToBuy);
+  });
 }

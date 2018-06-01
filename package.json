@@ -1,3 +1,4 @@
+
 {
   "name": "sel-cucumber-template",
   "version": "1.0.0",
@@ -21,7 +22,6 @@
     "express": "^4.16.3",
     "jquery": "^3.3.1",
     "selenium": "^2.20.0",
-    "selenium-cucumber-js": "^1.5.12",
-    "server": "file:node_modules/server"
+    "selenium-cucumber-js": "^1.5.12"
   }
 }
