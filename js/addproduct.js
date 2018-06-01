@@ -1,5 +1,5 @@
-function c() {
-  const app = myApp;
+(async () => {
+  await myApp.loaded;
 
   const addButton = document.querySelector("#add-btn");
   addButton.removeAttribute("disabled");
@@ -8,14 +8,13 @@ function c() {
     new URLSearchParams(location.search).get("varnummer"),
     10
   );
-  const product = app.products.find(p => p.varnummer === productId);
+  const product = myApp.products.find(p => p.varnummer === productId);
 
   if (!product) {
     throw new Error(`Product by id ${productId} was not found`);
   }
 
-  const ShoppingCart = require("./js/classes/shopping-cart");
-  const shoppingCart = new ShoppingCart();
+  const shoppingCart = myApp.users[0].shoppingCart;
 
   addButton.addEventListener("click", event => {
     const quantityInput = document.querySelector("#add-q-input-field");
@@ -25,4 +24,4 @@ function c() {
 
     console.log(shoppingCart.thingsToBuy);
   });
-}
+})();

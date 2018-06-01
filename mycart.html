@@ -95,6 +95,7 @@
       <div class="col-12 col-sm-8 order-2 order-sm-1">
         <!--//product needs to be in this div -->
         <ul class="shopping-cart mt-2">
+          <button class="float-right btn rem-probtn">x</button>
 
         </ul>
 
@@ -122,7 +123,7 @@
 
     <div id="mybutton">
       <button type="button" class="btn btn-secondary" id="empty-cartbtn">Clearcart</button>
-      <button type="button" class="btn btn-success" id="buybtn" onclick="">Order</button>
+      <button type="button" class="btn btn-success" id="buybtn">Order</button>
 
 
 
@@ -142,10 +143,11 @@
   <script src="./js/classes/shopping-cart.js"></script>
   <script src="./js/classes/person.js"></script>
   <script src="./js/classes/category.js"></script>
-  <script src="./js/myCart-render.js"></script>
 
   <script src="./app.js"></script>
 
+    <!-- the following scripts have to be loaded AFTER app.js -->
+  <script src="./js/myCart-render.js"></script>
 </body>
 
 </html>
