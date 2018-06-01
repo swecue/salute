@@ -1,5 +1,5 @@
 var assert = require("assert");
-var Product = require("product.js");
+var Product = require("./product.js");
 
 module.exports = class ShoppingCart {
   constructor() {
@@ -37,7 +37,7 @@ module.exports = class ShoppingCart {
       });
     }
     myApp.saveUser();
-    
+
   }
 
   findProductInCart(product) {
