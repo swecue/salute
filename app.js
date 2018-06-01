@@ -40,7 +40,13 @@ class App {
       this.addUser('Customer', 18);
       localStorage.setItem('user', JSON.stringify(this.users[0]));
     } else {
-      this.users.push(JSON.parse(localStorage.getItem('user')));
+      let loaded = JSON.parse(localStorage.getItem('user'));
+      let s = new ShoppingCart();
+      let u = new Person('dfgh', 22);
+      Object.assign(s, loaded.shoppingCart);
+      delete loaded.shoppingCart;
+      Object.assign(u, loaded);
+      this.users.push(u);
     }
   }
 
