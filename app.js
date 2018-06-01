@@ -31,6 +31,21 @@ class App {
     }
   }
 
+  loadUser() {
+    if (localStorage.getItem('user') === null) {
+      this.addUser('Customer', 18);
+      localStorage.setItem('user', JSON.stringify(this.users[0]));
+    } else {
+      let loaded = JSON.parse(localStorage.getItem('user'));
+      let s = new ShoppingCart();
+      let u = new Person('dfgh', 22);
+      Object.assign(s, loaded.shoppingCart);
+      delete loaded.shoppingCart;
+      Object.assign(u, loaded);
+      this.users.push(u);
+    }
+  }
+
   constructorContinued(productData, categoryData) {
     // Make instances of Product from the productdata
     this.products = [];
