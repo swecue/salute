@@ -1,7 +1,7 @@
 function c(){
   const app = myApp;
 
-  const addButton = document.querySelector('#Add-btn')
+  const addButton = document.querySelector('#add-btn')
   addButton.removeAttribute('disabled')
 
   const productId = parseInt(new URLSearchParams(location.search).get('varnummer'), 10)
