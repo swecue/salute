@@ -31,17 +31,30 @@ class App {
     }
   }
 
+  saveUser(){
+    if (typeof window !== "undefined") {
+      localStorage.setItem('user', JSON.stringify(this.users[0]));
+      console.log('saved', this.users[0].shoppingCart)
+      console.log('after save', localStorage.getItem('user'))
+    }
+  }
+
   loadUser() {
     if (localStorage.getItem('user') === null) {
       this.addUser('Customer', 18);
       localStorage.setItem('user', JSON.stringify(this.users[0]));
     } else {
       let loaded = JSON.parse(localStorage.getItem('user'));
+
       let s = new ShoppingCart();
-      let u = new Person('dfgh', 22);
       Object.assign(s, loaded.shoppingCart);
+
+      let u = new Person('dfgh', 22);
       delete loaded.shoppingCart;
+
       Object.assign(u, loaded);
+      u.shoppingCart = s;
+      
       this.users.push(u);
     }
   }
