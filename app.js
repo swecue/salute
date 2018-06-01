@@ -73,14 +73,6 @@ class App {
     this.users.push(new Person(name, birthDate));
   }
 
-  loadUser() {
-    if (localStorage.getItem("user") === null) {
-      this.addUser("Customer", 18);
-      localStorage.setItem("user", JSON.stringify(this.users[0]));
-    } else {
-      this.users.push(JSON.parse(localStorage.getItem("user")));
-    }
-  }
   //placeholder method
   filter(filterString) {}
 }
