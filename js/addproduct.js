@@ -20,7 +20,7 @@
     const quantityInput = document.querySelector("#add-q-input-field");
     const quantity = parseInt(quantityInput.value, 10);
 
-    shoppingCart.add(product, quantity);
+    myApp.users[0].shoppingCart.add(product, quantity);
 
     console.log(shoppingCart.thingsToBuy);
   });

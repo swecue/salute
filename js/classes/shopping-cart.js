@@ -36,6 +36,8 @@ module.exports = class ShoppingCart {
         quantity: quantity
       });
     }
+    myApp.saveUser();
+    
   }
 
   findProductInCart(product) {
