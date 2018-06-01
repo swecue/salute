@@ -1,10 +1,9 @@
 function c(){
   const app = myApp;
 
-  const removeProductButton = document.querySelector('')
-  // removeProductButton.removeAttribute('disabled')
 
   const productId = parseInt(new URLSearchParams(location.search).get('varnummer'), 10)
+  const removeProductButton = document.querySelector('.rem-probtn[productId]')
   const product = app.products.find(p => p.varnummer === productId)
 
   if (!product) {
@@ -16,8 +15,8 @@ function c(){
 
   removeProductButton.addEventListener('click', event => {
 
-    const quantityInput = document.querySelector('.product-quantity input')
-    const quantity = parseInt(quantityInput.value, 10)
+   // const quantityInput = document.querySelector('.product-quantity input')
+   // const quantity = parseInt(quantityInput.value, 10)
 
     shoppingCart.remove(product)
 
