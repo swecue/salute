@@ -1,4 +1,6 @@
-function testFunc() {
+(async () => {
+  await myApp.loaded;
+  
   // console.log('tha');
   // if(myApp.users[0].shoppingCart.thingsToBuy.length!=0){myApp.users[0].shoppingCart.removeAllItems();}
 
@@ -21,4 +23,4 @@ function testFunc() {
 
 
   // console.log(myApp.users[0].shoppingCart.thingsToBuy[0].product.varnummer);
-}
+})();

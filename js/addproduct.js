@@ -1,5 +1,5 @@
-function c() {
-  const app = myApp;
+(async () => {
+  await myApp.loaded;
 
   const addButton = document.querySelector("#add-btn");
   addButton.removeAttribute("disabled");
@@ -8,7 +8,7 @@ function c() {
     new URLSearchParams(location.search).get("varnummer"),
     10
   );
-  const product = app.products.find(p => p.varnummer === productId);
+  const product = myApp.products.find(p => p.varnummer === productId);
 
   if (!product) {
     throw new Error(`Product by id ${productId} was not found`);
@@ -24,4 +24,4 @@ function c() {
 
     console.log(shoppingCart.thingsToBuy);
   });
-}
+})();

@@ -1,9 +1,10 @@
-$.ready = async () => {
+(async () => {
+  await myApp.loaded;
+
   let singleProduct = window.location.search
     .substr(location.search.indexOf("varnummer=") + "varnummer=".length)
     .split("&")[0];
 
-  await myApp.loaded;
 
   // function image(prod) {
   //   return `
@@ -40,4 +41,4 @@ $.ready = async () => {
 
   document.getElementById("singleproduct").innerHTML = template(singleProduct);
   //document.getElementById("singleproductimg").innerHTML = image(img);
-};
+})();
