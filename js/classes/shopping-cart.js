@@ -37,7 +37,7 @@ module.exports = class ShoppingCart {
       });
     }
     myApp.saveUser();
-    
+
   }
 
   findProductInCart(product) {
@@ -71,6 +71,7 @@ module.exports = class ShoppingCart {
 
     // remove the item completely from the cart
     this.thingsToBuy.splice(index, 1);
+    myApp.saveUser();
   }
 
   removeAllItems() {
