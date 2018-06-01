@@ -1,6 +1,8 @@
-(function(){
-    // console.log('tha');
-    // if(myApp.users[0].shoppingCart.thingsToBuy.length!=0){myApp.users[0].shoppingCart.removeAllItems();}
+(async () => {
+  await myApp.loaded;
+
+  // console.log('tha');
+  // if(myApp.users[0].shoppingCart.thingsToBuy.length!=0){myApp.users[0].shoppingCart.removeAllItems();}
 
     // myApp.users[0].shoppingCart.add(myApp.products[5], 2);
     // myApp.users[0].shoppingCart.add(myApp.products[10], 5);
@@ -20,9 +22,11 @@
     //   $('.shopping-cart').append(listItemStart + productName + ': ' + productPrice + ' SEK' + removeBtn + '</li>');
     // }
     $('.rem-probtn').click(function() {
-        console.log('clicked!');
-        // $(this).closest('li').remove();
-      })
-      $('.rem-probtn').click();
-    })();
+      console.log('clicked!');
+      // $(this).closest('li').remove();
+    })
+    $('.rem-probtn').click();
+
   //['+varId+']
+
+})();
