@@ -12,6 +12,22 @@ table {
   box-sizing: border-box;
   z-index: 1001;
 }
+#buybtn {
+    position: absolute;
+    left: 70%;
+    right: 40%; 
+    bottom: 5%;
+    height:50px;
+    width:200px
+}
+#empty-cartbtn {
+    position: absolute;
+    left: 40%;
+    right: 40%; 
+    bottom: 5%;
+    height:50px;
+    width:200px
+}
 
 .link-class:hover {
   background-color: #f1f1f1;

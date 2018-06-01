@@ -11,8 +11,7 @@ function c(){
     throw new Error(`Product by id ${productId} was not found`)
   }
 
-  const ShoppingCart = require('./js/classes/shopping-cart')
-  const shoppingCart = new ShoppingCart()
+  const shoppingCart = myApp.users[0].shoppingCart;
 
   addButton.addEventListener('click', event => {
 
