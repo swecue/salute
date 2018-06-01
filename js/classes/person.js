@@ -1,5 +1,5 @@
 var assert = require("assert");
-var ShoppingCart = require("./shopping-cart.js");
+var ShoppingCart = require("shopping-cart.js");
 
 module.exports = class Person {
   constructor(name, birthDate) {

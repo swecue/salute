@@ -3,8 +3,7 @@ $.ready = async () => {
     .substr(location.search.indexOf("varnummer=") + "varnummer=".length)
     .split("&")[0];
 
-  const app = new App();
-  await app.loaded;
+  await myApp.loaded;
 
   // function image(prod) {
   //   return `
@@ -35,7 +34,7 @@ $.ready = async () => {
     `;
   }
 
-  singleProduct = app.products.find(function(product) {
+  singleProduct = myApp.products.find(function(product) {
     return product.varnummer == singleProduct;
   });
 
