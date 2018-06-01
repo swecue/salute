@@ -36,7 +36,3 @@ module.exports = class SearchBox {
     return results;
   }
 };
-/*render
-event listeners
-create html
-*/

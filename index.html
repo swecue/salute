@@ -67,22 +67,27 @@
       </nav>
 
       <div class="form-group row">
+
         <div class="col-4"></div>
+
         <div class="col-6">
-          <input class="form-control" method="GET" type="search" placeholder="Search" action="searchresult.html" id="sb-input-field">
-        </div>
-        <div class="col-2">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit" value="Submit" id="sb-searchbtn">Search</button>
-      </div>
+<form>
+            <input class="form-control"  type="search" placeholder="Search" action="searchresult.html" id="sb-input-field">
+          </div>
+          <div class="col-2">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit" value="Submit" id="sb-searchbtn">Search</button>
+</form>
+          </div>
+
       </div>
     </header>
-    <form action="searchresult.html" method="GET">
+    <!-- <form action="searchresult.html" method="GET">
     <input type="text" name="serialNumber" />
     <input type="submit" value="Submit" />
-</form>
+    </form> -->
 
     <main class="container-fluid mt-3" >
-      <h1>Headline</h1>
+      <h1>Do you need a drink?</h1>
       <div class="row d-flex justify-content-around">
 
          <div class="d-inline-block text-left">
@@ -93,23 +98,7 @@
          </div>
          <div class="d-inline-block text-right">
            <img class="img-fluid rounded float-right" src="images/spirits.png" alt="cart">
-         </div><!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-        <div class="col-12 col-sm-4 order-1 order-sm-2 mb-4 mb-sm-0">
-
-          <div class="card">
-            <img class="card-img-top" src="images/cat-in-snow.jpg" alt="Four cats in the snow.">
-            <div class="card-body">
-              <p class="card-text">Four cats having fun in the snow, early November 2012.</p>
-            </div>
-          </div> -->
-
+         </div>
 
 
 
@@ -123,12 +112,15 @@
     <script src="js/libs/bootstrap.js"></script>
 
     <!-- Application specific JavaScript -->
-    <script src="js/classes/shopping-cart.js"></script>
-    <script src="js/classes/person.js"></script>
+
     <script src="js/classes/category.js"></script>
     <script src="js/classes/product.js"></script>
+    <script src="js/classes/shopping-cart.js"></script>
+    <script src="js/classes/person.js"></script>
 
     <script src="./app.js"></script>
+
+    <script src="js/searchresult.js"></script>
 
   </body>
 </html>

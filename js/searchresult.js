@@ -4,12 +4,12 @@ $.ready = async () => {
   const box = new SearchBox();
   await box.loaded;
 
-  let userInput = $("#sb-input-field").val();
+  let userInput = $("#sb-input-field").value();
 
   let result = box.search(userInput);
 
   result.slice(0, 100).forEach(product => {
-    const newDiv = document.createElement("div");
+    const newDiv = document.createElement("li");
     const newA = document.createElement("a");
     const newContent = document.createTextNode(
       `${product.namn} | ${product.ursprunglandnamn} | ${product.varugrupp}`
@@ -17,7 +17,7 @@ $.ready = async () => {
 
     newA.setAttribute(
       "href",
-      `product.html?varnummer=${product.varnummer} | ${product.namn} | ${
+      `searchresult.html?varnummer=${product.varnummer} | ${product.namn} | ${
         product.ursprunglandnamn
       } | ${product.varugrupp}`
     );
