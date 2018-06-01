@@ -12,13 +12,12 @@ module.exports = function() {
   this.Given(/^that I'm at the product page$/,async function() {
     await helpers.loadPage("http://localhost:3000/product.html");
     console.log("it works");    
-  });
-
+  })
     this.When(/^I click the add button product to cart$/,async function() {
   
-    let theButton = await $('#Add-btn');
+    let theButton = await $('#add-btn');
 
-    assert(theButton, "The #Add-btn doesn't exist");
+    assert(theButton, "The #add-btn doesn't exist");
     if (theButton) {
       await theButton.click();
       await sleep(1000);
@@ -45,15 +44,26 @@ module.exports = function() {
         await sleep(1000);
         // click the add-to-cart button
 
+    let theButton = await $('#add-btn');
+
+    assert(theButton, "The #add-btn doesn't exist");
+    if (theButton) {
+      await theButton.click();
+      await sleep(1000);
+    }
+  
       }
     }
   );
   
        
    
-       this.Then(/^the shopping cart overview should shows the added number$/, function (callback) {
+       this.Then(/^the shopping cart overview should shows the added number$/,async function () {
          
-         callback();
+         
+     await helpers.loadPage("http://localhost:3000/mycart.html");
+        await sleep(1000);
+         
        });
 
          
