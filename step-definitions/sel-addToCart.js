@@ -10,7 +10,7 @@ module.exports = function() {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
   this.Given(/^that I'm at the product page$/,async function() {
-    await helpers.loadPage("http://localhost:3000/product.html");
+    await helpers.loadPage("http://localhost:3000/product.html?varnummer=77747");
     console.log("it works");    
   })
     this.When(/^I click the add button product to cart$/,async function() {
@@ -29,7 +29,7 @@ module.exports = function() {
 
    this.Then(/^the shopping cart overview should shows the added product$/,async function(){
          await helpers.loadPage("http://localhost:3000/mycart.html");
-        await sleep(1000);
+        await sleep(3000);
          
        });
 
@@ -62,7 +62,7 @@ module.exports = function() {
          
          
      await helpers.loadPage("http://localhost:3000/mycart.html");
-        await sleep(1000);
+        await sleep(5000);
          
        });
 
