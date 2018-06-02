@@ -43,7 +43,7 @@ module.exports = class ShoppingCart {
   findProductInCart(product) {
     // should we check that product is an instance of Product?
     for (let i = 0; i < this.thingsToBuy.length; i++) {
-      if (this.thingsToBuy[i].product === product) {
+      if (this.thingsToBuy[i].product.varnummer === product.varnummer) {
         return i;
       }
     }
