@@ -19,7 +19,7 @@ module.exports =  function(){
 
  this.Then(/^the products page will open$/, async function () {
         await sleep(1000);
-        assert(await $('.nav-link.active a[href="productlist.html"]'), "Products page is not active");
+        assert(await $('.active a.nav-link[href="productlist.html"]'), "Products page is not active");
         assert((await driver.getCurrentUrl()).includes("productlist"), "Didn´t go to the products page");
        });
 
@@ -39,7 +39,7 @@ module.exports =  function(){
 
  this.Then(/^the Contact page will open$/, async function () {
         await sleep(1000);
-        assert(await $('.nav-link.active a[href="contact.html"]'), "Contact page is not active");
+        assert(await $('.active a.nav-link[href="contact.html"]'), "Contact page is not active");
         assert((await driver.getCurrentUrl()).includes("contact"), "Didn´t go to the contact page");
          
        });
@@ -60,10 +60,9 @@ module.exports =  function(){
 
   this.Then(/^the About us page will open$/, async function () {
         await sleep(1000);
-        assert(await $('.nav-link.active a[href="about.html"]'), "About us page is not active");
+        assert(await $('.active a.nav-link[href="about.html"]'), "About us page is not active");
         assert((await driver.getCurrentUrl()).includes("about"), "Didn´t get to the about us page");
         
        });
-
 
 }

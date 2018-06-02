@@ -7,7 +7,7 @@
   "scripts": {
     "test": "node ./node_modules/selenium-cucumber-js/index.js -d -b phantomjs && exit 1",
     "one-feature": "node node_modules/selenium-cucumber-js/index.js  -b chrome -f  ./features/sel-searchbox.feature & exit 0",
-    "Anna": "node node_modules/selenium-cucumber-js/index.js -b chrome -f  ./features/sel-removeSingleProduct.feature & exit 0",
+    "Anna": "node node_modules/selenium-cucumber-js/index.js -b chrome -f  ./features/sel-links.feature & exit 0",
     "Carl": "node node_modules/selenium-cucumber-js/index.js -d -b chrome -f  ./features/sel-cartContentOverview.feature & exit 0",
     "Poury": "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f  ./features/addToCart.feature & exit 0",
     "Suma": "node node_modules/selenium-cucumber-js/index.js -d -b phantomjs -f   ./features/buy-beverages.feature & exit 0",
