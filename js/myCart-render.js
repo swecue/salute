@@ -24,7 +24,8 @@
       if(theProduct.varnummer == getVarId){
         myApp.users[0].shoppingCart.remove(theProduct);
         console.log('tjena');
-        console.log(myApp.users[0].shoppingCart.remove(theProduct));
+        // BUG: calls remove one additional time in console statement 
+        // console.log(myApp.users[0].shoppingCart.remove(theProduct));
         break;
       }
     }
