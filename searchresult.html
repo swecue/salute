@@ -66,15 +66,18 @@
 
       </nav>
 
-      <div class="form-group row">
-        <div class="col-4"></div>
-        <div class="col-6">
-          <input class="form-control" type="search" placeholder="Search me" name="search" action="searchresult.html" id="sb-input-field">
+      <form class="row form-group" method="GET" target="_self" action="searchresult.html">
+        <div class="mb-3 col-5">
         </div>
-        <div class="col-2">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="sb-searchbtn">Search</button>
-      </div>
-      </div>
+
+        <div class="mb-3 col-5">
+          <input class="form-control" type="search" placeholder="Search" name="sb-input-field" id="sb-input-field">
+        </div>
+        <div class="mb-3 col-2">
+          <button class="btn btn-secondary mb-3" type="submit" value="Submit" id="sb-searchbtn">Search</button>
+        </div>
+
+      </form> <!-- end of form row -->
 
     </header>
 
@@ -82,11 +85,9 @@
 
       <h1>Searchresult</h1>
 
-      <div class="row" style="width:900px;">
+      <div class="row d-flex justify-content-around">
 
-        <ul class="list-group" id="result"></ul>
-        <br />
-
+        <div class="searchresult h4 list-g"></div>
 
       </div><!-- ends the row -->
 
@@ -96,17 +97,20 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/libs/jquery.js"></script>
+
     <script src="js/libs/popper.js"></script>
     <script src="js/libs/bootstrap.js"></script>
 
     <!-- Application specific JavaScript -->
-    <script src="js/searchresult.js"></script>
-    <script src="js/classes/shopping-cart.js"></script>
-    <script src="js/classes/person.js"></script>
+
     <script src="js/classes/category.js"></script>
     <script src="js/classes/product.js"></script>
+    <script src="js/classes/shopping-cart.js"></script>
+    <script src="js/classes/person.js"></script>
 
+
+    <script src="js/classes/search-box.js"></script>
+    <script src="js/searchresult.js"></script>
     <script src="./app.js"></script>
 
   </body>

@@ -65,15 +65,19 @@
 
       </nav>
 
-      <div class="form-group row">
-        <div class="col-4"></div>
-        <div class="col-6">
-          <input class="form-control searchbox" type="search" placeholder="Search" value="" id="sb-input-field">
+      <form class="row form-group" method="GET" target="_self" action="searchresult.html">
+        <div class="mb-3 col-5">
         </div>
-        <div class="col-2">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="sb-searchbtn">Search</button>
-      </div>
-      </div>
+
+        <div class="mb-3 col-5">
+          <input class="form-control" type="search" placeholder="Search" name="sb-input-field" id="sb-input-field">
+        </div>
+        <div class="mb-3 col-2">
+          <button class="btn btn-secondary mb-3" type="submit" value="Submit" id="sb-searchbtn">Search</button>
+        </div>
+
+      </form> <!-- end of form row -->
+
 </header>
 <body>
   <head></head>
@@ -95,10 +99,10 @@
           <div class="col-2" id="singleproductimg">
 
           </div>
-          <div class="col-8">
-            <div class="h3" id="singleproduct">products go here this is just text for now</div>
+          <div class="col-7">
+            <div class="h3" id="singleproduct"></div>
           </div>
-          <div class="col-2">
+          <div class="col-3" id="bevprice">
 
           </div>
         </div>
@@ -119,7 +123,7 @@
           <div class="col-2">
 
               <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="add-btn">Add To Cart</button>
-        
+
           </div>
         </div><!-- ends the row -->
       </div><!-- ends the container -->

@@ -49,7 +49,7 @@
               <a class="nav-link" href="index.html" id="nav-home-btn" id="nav-products-btn"><h3>HOME</h3><span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="productlist.html" id="nav-products-btn"><h3>PRODUCTS</h3></a>
+              <a class="nav-link" href="productlist.html"><h3>PRODUCTS</h3></a>
             </li>
             <li class="nav-itemx">
               <a class="nav-link" href="contact.html" id="nav-contact-btn"><h3>CONTACT</h3></a>
@@ -66,39 +66,35 @@
 
       </nav>
 
-      <div class="form-group row">
-
-        <div class="col-4"></div>
-
-        <div class="col-6">
-<form>
-            <input class="form-control"  type="search" placeholder="Search" action="searchresult.html" id="sb-input-field">
-          </div>
-          <div class="col-2">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit" value="Submit" id="sb-searchbtn">Search</button>
-</form>
+        <form class="row form-group" method="GET" target="_self" action="searchresult.html">
+          <div class="mb-3 col-5">
           </div>
 
-      </div>
+          <div class="mb-3 col-5">
+            <input class="form-control" type="search" placeholder="Search" name="sb-input-field" id="sb-input-field">
+          </div>
+          <div class="mb-3 col-2">
+            <button class="btn btn-secondary mb-3" type="submit" value="Submit" id="sb-searchbtn">Search</button>
+          </div>
+
+        </form> <!-- end of form row -->
+
     </header>
-    <!-- <form action="searchresult.html" method="GET">
-    <input type="text" name="serialNumber" />
-    <input type="submit" value="Submit" />
-    </form> -->
+
 
     <main class="container-fluid mt-3" >
       <h1>Do you need a drink?</h1>
       <div class="row d-flex justify-content-around">
 
-         <div class="d-inline-block text-left">
-           <img class="img-fluid rounded float-left" src="images/wine.png" alt="cart">
-         </div>
-         <div class="d-inline-block text-center">
-           <img class="img-fluid rounded float-none" src="images/beer.png" alt="cart">
-         </div>
-         <div class="d-inline-block text-right">
-           <img class="img-fluid rounded float-right" src="images/spirits.png" alt="cart">
-         </div>
+        <div class="d-inline-block text-left">
+          <img class="img-fluid rounded float-left" src="images/wine.png" alt="cart">
+        </div>
+        <div class="d-inline-block text-center">
+          <img class="img-fluid rounded float-none" src="images/beer.png" alt="cart">
+        </div>
+        <div class="d-inline-block text-right">
+          <img class="img-fluid rounded float-right" src="images/spirits.png" alt="cart">
+        </div>
 
 
 
@@ -107,20 +103,29 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/libs/jquery.js"></script>
     <script src="js/libs/popper.js"></script>
     <script src="js/libs/bootstrap.js"></script>
 
     <!-- Application specific JavaScript -->
-
     <script src="js/classes/category.js"></script>
     <script src="js/classes/product.js"></script>
     <script src="js/classes/shopping-cart.js"></script>
     <script src="js/classes/person.js"></script>
+    <script src="js/classes/search-box.js"></script>
+
 
     <script src="./app.js"></script>
 
-    <!--<script src="js/searchresult.js"></script>-->
+    <!-- <script type="text/javascript">
+    relocate_search () {
+        var userInput = $('#sb-input-field').val();
+        var url = "searchresult.html" + userInput + "&red";
+        location.href(url, "-self");
+        });
+        </script> -->
+
+
+
 
   </body>
 </html>

@@ -20,25 +20,40 @@
     return `
       <div class="beverage">
 
-        <h2 class="name">${product.namn}
+        <h2 class="name">${product.namn}</h2>
           <span class="varugrupp">
           (${product.varugrupp})
-          </span></h2>
+          </span>
           <p><h3>${
             typeof product.namn2 == "string" ? product.namn2 : ""
           }</h3></p>
           ${product.ursprunglandnamn}
-          <p>${product.prisinklmoms}</p>
-          <p>${product.volymiml}</p>
+          <div> </div>
+      </div>
+    `;
+  }
+
+  function temprice(product) {
+    return `
+      <div class="beverage">
+
+        <h2 class="name">
+          <span class="varugrupp">
+          <p class="price">${product.prisinklmoms} kr</p>
+          <p class="vol">${product.volymiml}ml</p>
+          <h4>${product.forpackning}</h4>
+          </span></h2>
 
       </div>
     `;
   }
+
 
   singleProduct = myApp.products.find(function(product) {
     return product.varnummer == singleProduct;
   });
 
   document.getElementById("singleproduct").innerHTML = template(singleProduct);
+  document.getElementById("bevprice").innerHTML = temprice(singleProduct);
   //document.getElementById("singleproductimg").innerHTML = image(img);
 })();
