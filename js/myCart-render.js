@@ -6,10 +6,10 @@
   for (let i = 0; i < cartLength; i++) {
     let varId = myApp.users[0].shoppingCart.thingsToBuy[i].product.varnummer;
     let productName = myApp.users[0].shoppingCart.thingsToBuy[i].product.namn;
-    let listItemStart = '<li class= my-2 bg-primary col-6 product data-varnummer=' + '"' + varId + '"' + '>';
+    let listItemStart = `<tr><td class= 'product' data-varnummer=' + '"' + varId + '"' + '>`;
     let productPrice = myApp.users[0].shoppingCart.thingsToBuy[i].product.prisinklmoms;
-    let removeBtn = `<button class="btn rem-probtn" id=${varId}` + '>x</button>';
-    $('.shopping-cart').append(listItemStart + productName + ': ' + productPrice + ' SEK' + removeBtn + '</li>');
+    let removeBtn = `<button type="button" class="btn btn-sm btn-light rem-probtn" id=${varId}` + '>&#10006;</button>';
+    $('.shopping-cart').append(listItemStart + productName + ': '+ '</td><td>' + productPrice + ' SEK</td><td>' + removeBtn + '</td></tr>');
   }
   $('.rem-probtn').click(function() {
     $(this).closest('li').remove();
@@ -24,7 +24,7 @@
       if(theProduct.varnummer == getVarId){
         myApp.users[0].shoppingCart.remove(theProduct);
         console.log('tjena');
-        // BUG: calls remove one additional time in console statement 
+        // BUG: calls remove one additional time in console statement
         // console.log(myApp.users[0].shoppingCart.remove(theProduct));
         break;
       }

@@ -69,6 +69,7 @@ module.exports = function() {
       if (searchlist) {
         // Start grabbing individual products from it compare them with what I searched for
         let foundProducts = await $(".searchlist .product");
+
         assert(foundProducts, "Found no products. Expected 7...");
 
         let jordanCo = 0;

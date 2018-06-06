@@ -71,45 +71,49 @@
 
     </nav>
 
-    <div class="form-group row">
-      <div class="col-4"></div>
-      <div class="col-6">
-        <input class="form-control" type="search" placeholder="Search" value="" id="sb-input-field">
+    <form class="row form-group" method="GET" target="_self" action="searchresult.html">
+      <div class="mb-3 col-5">
       </div>
-      <div class="col-2">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="sb-searchbtn">Search</button>
+
+      <div class="mb-3 col-5">
+        <input class="form-control" type="search" placeholder="Search" name="sb-input-field" id="sb-input-field">
       </div>
-    </div>
+      <div class="mb-3 col-2">
+        <button class="btn btn-secondary mb-3" type="submit" value="Submit" id="sb-searchbtn">Search</button>
+      </div>
+
+    </form> <!-- end of form row -->
+
 
   </header>
 
   <main class="container mt-3">
-    <!-- //shopping-cart needs to be in this div-->
-    <div class="row">
-      <div class="col-12">
-        <h1>Mycart</h1>
+    <h1>Shopping cart</h1>
+
+    <div class="row d-flex justify-content-around">
+
+      <div class="shopping col-12 h4">
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>*</th>
+            </tr>
+          </thead>
+          <tbody class="shopping-cart"><!-- shopping-cart needs to be here -->
+                          <!--product needs to be here -->
+          </tbody>
+        </table>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-12 col-sm-8 order-2 order-sm-1">
-        <!--//product needs to be in this div -->
-        <ul class="shopping-cart mt-2">
 
-        </ul>
-
-        
-
-      </div>
-
-    </div>
-    <!-- ends the row -->
+    </div><!-- ends the row -->
 
     <div id="mybutton">
       <button type="button" class="btn btn-secondary" id="empty-cartbtn">Clear cart</button>
       <button type="button" class="btn btn-success" id="buybtn">Order</button>
-
-
 
     </div>
 
